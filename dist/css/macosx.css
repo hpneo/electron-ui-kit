@@ -1,5 +1,6 @@
 .macosx {
   font-family: "Helvetica Neue";
+  font-size: 12px;
   background: #ececec;
   padding: 10px; }
 
@@ -483,6 +484,61 @@
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px; }
 
+.macosx .list {
+  margin: 2px 0 0 0;
+  padding: 0;
+  list-style: none; }
+  .macosx .list li {
+    min-height: 19px;
+    background: #ffffff;
+    padding: 2px 27px 2px 27px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+    .macosx .list li:nth-child(odd) {
+      background: #f5f5f5; }
+    .macosx .list li.selected {
+      background: #2168d6;
+      color: #ffffff; }
+
+.macosx table {
+  border-collapse: collapse; }
+  .macosx table thead {
+    background: #f0f0f0; }
+    .macosx table thead tr {
+      height: 24px; }
+    .macosx table thead th {
+      border: solid 1px #c0c0c0;
+      border-top: none;
+      font-weight: normal;
+      text-align: left; }
+      .macosx table thead th:first-child {
+        padding-left: 7px;
+        padding-right: 7px;
+        border-left: none; }
+      .macosx table thead th:last-child {
+        border-right: none; }
+      .macosx table thead th.table-header-right {
+        text-align: right; }
+  .macosx table tbody {
+    color: graytext; }
+    .macosx table tbody tr {
+      height: 19px;
+      background: #ffffff; }
+      .macosx table tbody tr:nth-child(odd) {
+        background: #f5f5f5; }
+      .macosx table tbody tr.selected {
+        background: #2168d6; }
+        .macosx table tbody tr.selected td {
+          color: #ffffff; }
+    .macosx table tbody td:first-child {
+      color: #000000; }
+  .macosx table th, .macosx table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 2px 12px 2px 12px; }
+
 .macosx .sidebar {
   width: 192px;
   font-size: 11px;
@@ -493,15 +549,18 @@
     line-height: 26px; }
   .macosx .sidebar dt {
     color: #808080;
-    margin-left: 9px;
+    padding-left: 9px;
     font-family: HelveticaNeue-Medium;
     font-size: 10.5px;
     letter-spacing: 0.35px;
     line-height: 16px; }
   .macosx .sidebar dd {
     color: #4d4d4d;
-    margin-left: 18px;
-    letter-spacing: 0.4px; }
+    padding-left: 18px;
+    letter-spacing: 0.4px;
+    margin: 0; }
+    .macosx .sidebar dd.selected {
+      background: #cecece; }
     .macosx .sidebar dd .icon {
       display: inline-block;
       width: 16px;

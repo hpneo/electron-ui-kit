@@ -293,6 +293,48 @@
   .windows10 progress::-webkit-progress-value {
     background: #0078D7; }
 
+.windows10 .list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .windows10 .list li {
+    min-height: 44px;
+    background: #ffffff;
+    padding: 17px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+    .windows10 .list li.selected {
+      background: #e6e6e6; }
+
+.windows10 table {
+  border-collapse: collapse; }
+  .windows10 table thead tr {
+    height: 35px; }
+  .windows10 table thead th {
+    border: solid 2px gray;
+    border-top: none;
+    font-weight: normal;
+    text-align: left; }
+    .windows10 table thead th:first-child {
+      border-left: none; }
+    .windows10 table thead th:last-child {
+      border-right: none; }
+    .windows10 table thead th.table-header-right {
+      text-align: right; }
+  .windows10 table tbody {
+    color: #000000; }
+    .windows10 table tbody tr {
+      height: 35px;
+      background: #ffffff; }
+      .windows10 table tbody tr.selected {
+        background: #e6e6e6; }
+  .windows10 table th, .windows10 table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 4px; }
+
 .windows10 .sidebar {
   width: 256px;
   font-size: 15px;

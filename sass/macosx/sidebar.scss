@@ -12,7 +12,7 @@
 
     dt {
       color: #808080;
-      margin-left: 9px;
+      padding-left: 9px;
       font-family: HelveticaNeue-Medium;
       font-size: 10.5px;
       letter-spacing: 0.35px;
@@ -21,8 +21,13 @@
 
     dd {
       color: #4d4d4d;
-      margin-left: 18px;
+      padding-left: 18px;
       letter-spacing: 0.4px;
+      margin: 0;
+
+      &.selected {
+        background: rgb(206, 206, 206);
+      }
 
       .icon {
         display: inline-block;

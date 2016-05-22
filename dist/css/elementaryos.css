@@ -1,5 +1,6 @@
 .elementaryos {
   font-family: "Open Sans";
+  font-size: 12px;
   background: #d5d5d5;
   padding: 12px; }
 
@@ -359,9 +360,68 @@
     background-image: linear-gradient(to bottom, #5dbced 0%, #45a5e9 100%);
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05), inset 0 1px 0 0 rgba(255, 255, 255, 0.45), inset 0 -1px 0 0 rgba(255, 255, 255, 0.15), 0 1px 0 0 rgba(255, 255, 255, 0.15); }
 
+.elementaryos .list {
+  padding: 0;
+  list-style: none; }
+  .elementaryos .list li {
+    min-height: 24px;
+    background: #ffffff;
+    padding: 2px 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-top: solid 1px transparent;
+    border-bottom: solid 1px transparent; }
+    .elementaryos .list li.selected {
+      background-image: linear-gradient(to bottom, #5dbced, #45a5e9);
+      border-color: #5296de;
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05), inset 0 1px 0 0 rgba(255, 255, 255, 0.15), inset 0 -1px 0 0 rgba(255, 255, 255, 0.15), 0 1px 0 0 rgba(255, 255, 255, 0.15);
+      color: #ffffff;
+      text-shadow: 0 0.5px 0 black; }
+
+.elementaryos table {
+  border-collapse: collapse; }
+  .elementaryos table thead {
+    background: #f0f0f0; }
+    .elementaryos table thead tr {
+      height: 24px; }
+    .elementaryos table thead th {
+      border: solid 1px #c0c0c0;
+      border-top: none;
+      font-weight: normal;
+      text-align: left; }
+      .elementaryos table thead th:first-child {
+        padding-left: 7px;
+        padding-right: 7px;
+        border-left: none; }
+      .elementaryos table thead th:last-child {
+        border-right: none; }
+      .elementaryos table thead th.table-header-right {
+        text-align: right; }
+  .elementaryos table tbody {
+    color: #000000; }
+    .elementaryos table tbody tr {
+      height: 24px;
+      background: #ffffff; }
+      .elementaryos table tbody tr:nth-child(odd) {
+        background: #f5f5f5; }
+      .elementaryos table tbody tr.selected {
+        background-image: linear-gradient(to bottom, #5dbced, #45a5e9);
+        border-top: solid 1px #5296de;
+        border-bottom: solid 1px #5296de;
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05), inset 0 1px 0 0 rgba(255, 255, 255, 0.15), inset 0 -1px 0 0 rgba(255, 255, 255, 0.15), 0 1px 0 0 rgba(255, 255, 255, 0.15);
+        text-shadow: 0 0.5px 0 black; }
+        .elementaryos table tbody tr.selected td {
+          color: #ffffff; }
+  .elementaryos table th, .elementaryos table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 2px 12px 2px 12px; }
+
 .elementaryos .sidebar {
   width: 156px;
-  background: #e3e3e3;
+  background: #dedede;
   font-size: 12px;
   line-height: 24px;
   padding: 6px 0; }
@@ -371,15 +431,18 @@
 
 .elementaryos dt {
   font-weight: 700;
-  padding-left: 12px; }
+  padding-left: 10px; }
 
 .elementaryos dd {
-  padding-left: 24px;
+  padding-left: 21px;
   margin: 0; }
-  .elementaryos dd:active {
-    background-image: linear-gradient(to bottom, rgba(192, 192, 192, 0.9), rgba(209, 209, 209, 0.9));
-    border-color: rgba(0, 0, 0, 0.25);
-    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15), 0 1px 0 0 rgba(255, 255, 255, 0.6); }
+  .elementaryos dd.selected {
+    background-image: linear-gradient(to bottom, #5dbced, #45a5e9);
+    border-top: solid 1px #5296de;
+    border-bottom: solid 1px #5296de;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05), inset 0 1px 0 0 rgba(255, 255, 255, 0.15), inset 0 -1px 0 0 rgba(255, 255, 255, 0.15), 0 1px 0 0 rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    text-shadow: 0 0.5px 0 black; }
 
 .elementaryos .icon {
   width: 16px;
