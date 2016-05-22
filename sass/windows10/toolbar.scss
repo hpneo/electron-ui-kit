@@ -1,0 +1,31 @@
+.windows10 {
+  .toolbar {
+    min-height: 48px;
+    background: #f2f2f2;
+
+    button {
+      background: none;
+      min-width: 68px;
+      min-height: 48px;
+
+      &:active {
+        background: rgb(218, 218, 218);
+        color: inherit;
+      }
+      
+      &.dropdown-button {
+        background-image: url("../images/windows10/select-arrow.png");
+        background-repeat: no-repeat;
+        background-position: calc(100% - 5px) center;
+        background-size: 12.5px auto;
+      }
+    }
+
+    .segmented-control,
+    .grouped-buttons {
+      > button {
+        min-width: 48px;
+      }
+    }
+  }
+}

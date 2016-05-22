@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Electron UI Kit</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' async rel='stylesheet' type='text/css'>
+  <link href="dist/css/global.css" rel="stylesheet">
+  <link href="dist/css/macosx.css" rel="stylesheet">
+  <link href="dist/css/windows10.css" rel="stylesheet">
+  <link href="dist/css/elementaryos.css" rel="stylesheet">
+</head>
+<body>
+  <section class="macosx">
+    <article id="macosx-buttons">
+      <h2>Buttons</h2>
+
+      <button>Default Button</button>
+      <button class="primary">Primary Button</button>
+      <button disabled>Disabled Button</button>
+    </article>
+
+    <article id="macosx-inputs">
+      <h2>Inputs</h2>
+
+      <input type="checkbox" />
+      <input type="checkbox" checked />
+      <input type="checkbox" disabled />
+      <br />
+      <br />
+      <input type="color" />
+      <input type="color" disabled />
+      <br />
+      <br />
+      <input type="date" />
+      <input type="date" disabled />
+      <br />
+      <br />
+      <input type="datetime" />
+      <input type="datetime" disabled />
+      <br />
+      <br />
+      <input type="email" />
+      <input type="email" disabled />
+      <br />
+      <br />
+      <input type="file" />
+      <input type="file" disabled />
+      <br />
+      <br />
+      <input type="file" class="button-only" />
+      <input type="file" class="button-only" disabled />
+      <br />
+      <br />
+      <input type="month" />
+      <input type="month" disabled />
+      <br />
+      <br />
+      <input type="number" />
+      <input type="number" disabled />
+      <br />
+      <br />
+      <input type="password" />
+      <input type="password" disabled />
+      <br />
+      <br />
+      <input type="radio" />
+      <input type="radio" checked />
+      <input type="radio" disabled />
+      <br />
+      <br />
+      <input type="reset" />
+      <input type="reset" disabled />
+      <br />
+      <br />
+      <input type="search" placeholder="Search" />
+      <input type="search" placeholder="Search" disabled />
+      <br />
+      <br />
+      <input type="tel" />
+      <input type="tel" disabled />
+      <br />
+      <br />
+      <input type="text" />
+      <input type="text" disabled />
+      <br />
+      <br />
+      <input type="time" />
+      <input type="time" disabled />
+      <br />
+      <br />
+      <input type="url" />
+      <input type="url" disabled />
+      <br />
+      <br />
+      <input type="week" />
+      <input type="week" disabled />
+      <br />
+      <br />
+      <select>
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+        <optgroup label="Group 1">
+          <option>Option 4</option>
+          <option>Option 5</option>
+          <option>Option 6</option>
+        </optgroup>
+      </select>
+      <select disabled>
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+      </select>
+      <br />
+      <br />
+      <input type="range" />
+      <input type="range" disabled />
+      <input type="range" value="3" min="1" max="5" />
+      <input type="range" value="3" min="1" max="5" disabled />
+      <br />
+      <br />
+      <textarea rows="8" cols="40"></textarea>
+      <textarea rows="8" cols="40" disabled></textarea>
+    </article>
+
+    <article id="macosx-controls">
+      <h2>Controls</h2>
+
+      <progress value="50" max="100">50%</progress>
+      <br />
+      <br />
+      <nav class="toolbar">
+        <div class="grouped-buttons">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" x="0px" y="0px" width="12" height="12" viewBox="0 0 50 50" style="null" class="icon">
+              <path d="M 35 2.75 L 12.75 25 L 35 47.25 L 37.09375 45.15625 L 16.9375 25 L 37.09375 4.84375 L 35 2.75 z"></path>
+            </svg>
+          </button>
+          <button disabled>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" x="0px" y="0px" width="12" height="12" viewBox="0 0 50 50" style="null" class="icon">
+              <path d="M 15 2.75 L 12.90625 4.84375 L 33.0625 25 L 12.90625 45.15625 L 15 47.25 L 37.25 25 L 15 2.75 z"></path>
+            </svg>
+          </button>
+        </div>
+
+        <div class="segmented-control">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" x="0px" y="0px" width="12" height="12" viewBox="0 0 50 50" style="null" class="icon">
+              <path d="M40.952,25.921c-0.935-1.365-2.22-2.443-3.833-3.218c0.994-0.703,1.808-1.516,2.43-2.43 c0.993-1.458,1.497-3.282,1.497-5.423c0-1.944-0.334-3.617-0.992-4.973c-0.668-1.377-1.626-2.498-2.845-3.331 c-1.181-0.809-2.608-1.396-4.244-1.747c-1.575-0.336-3.335-0.507-5.23-0.507H9.59c-0.552,0-1,0.448-1,1v38.555c0,0.553,0.448,1,1,1 h18.684c1.809,0,3.594-0.229,5.306-0.681c1.744-0.461,3.324-1.184,4.694-2.147c1.401-0.987,2.531-2.275,3.357-3.83 c0.83-1.562,1.251-3.419,1.251-5.519C42.882,30.067,42.232,27.797,40.952,25.921z M18.068,11.88h7.938 c0.756,0,1.485,0.063,2.188,0.188c0.701,0.127,1.322,0.352,1.863,0.676c0.539,0.324,0.971,0.775,1.295,1.35 c0.324,0.576,0.486,1.315,0.486,2.214c0,1.62-0.486,2.79-1.458,3.51c-0.972,0.721-2.214,1.08-3.726,1.08h-8.586V11.88z M32.891,34.669c-0.342,0.647-0.801,1.161-1.377,1.539s-1.242,0.647-1.998,0.81s-1.548,0.243-2.375,0.243h-9.073V26.677h9.234 c1.837,0,3.312,0.425,4.429,1.269c1.115,0.847,1.674,2.261,1.674,4.24C33.404,33.193,33.232,34.021,32.891,34.669z"></path>
+            </svg>
+          </button>
+          <button class="selected">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" x="0px" y="0px" width="12" height="12" viewBox="0 0 50 50" style="null" class="icon">
+              <path d="M23.108,44.85h-5.13c-0.301,0-0.586-0.136-0.776-0.37c-0.19-0.233-0.264-0.541-0.202-0.836l8.1-38.556 c0.097-0.463,0.505-0.794,0.979-0.794h5.13c0.302,0,0.587,0.136,0.776,0.37s0.265,0.541,0.202,0.836l-8.1,38.557 C23.989,44.519,23.581,44.85,23.108,44.85z"></path>
+            </svg>
+          </button>
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" x="0px" y="0px" width="12" height="12" viewBox="0 0 50 50" style="null" class="icon">
+              <path d="M 10 6 C 9.448 6 9 6.448 9 7 L 9 28 C 9 36.822 16.178 44 25 44 C 33.822 44 41 36.822 41 28 L 41 7 C 41 6.448 40.553 6 40 6 L 36 6 C 35.447 6 35 6.448 35 7 L 35 28 C 35 33.514 30.514 38 25 38 C 19.486 38 15 33.514 15 28 L 15 7 C 15 6.448 14.552 6 14 6 L 10 6 z M 11 47 C 10.448 47 10 47.447 10 48 C 10 48.553 10.448 49 11 49 L 39 49 C 39.553 49 40 48.553 40 48 C 40 47.447 39.553 47 39 47 L 11 47 z"></path>
+            </svg>
+          </button>
+        </div>
+
+        <input type="search" placeholder="Search" />
+
+        <select>
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+          <optgroup label="Group 1">
+            <option>Option 4</option>
+            <option>Option 5</option>
+            <option>Option 6</option>
+          </optgroup>
+        </select>
+
+        <button type="button" class="toolbar-button text-only">Toolbar Button</button>
+        <button type="button" class="toolbar-button dropdown-button">
+          <!-- Settings Filled icon by Icons8 -->
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" x="0px" y="0px" width="12" height="12" viewBox="0 0 50 50" style="null" class="icon">
+            <path d="M50,28.794v-7.69l-7.343-1.199c-0.382-1.325-0.91-2.599-1.575-3.802l4.278-6.098l-5.438-5.436l-6.021,4.328 c-1.213-0.675-2.497-1.209-3.83-1.593l-1.28-7.306h-7.69L19.914,7.28c-1.344,0.381-2.629,0.909-3.837,1.576l-6.005-4.29L4.636,10 l4.223,6.038c-0.68,1.222-1.218,2.516-1.605,3.861L0,21.107v7.686l7.242,1.283c0.385,1.344,0.923,2.638,1.605,3.86l-4.28,5.986 L10,45.362l6.047-4.235c1.218,0.674,2.506,1.206,3.845,1.588l1.213,7.287h7.685l1.297-7.307c1.338-0.39,2.62-0.927,3.827-1.603 l6.085,4.27l5.438-5.441l-4.347-6.035c0.666-1.205,1.192-2.48,1.571-3.805L50,28.794z M25,32c-3.86,0-7-3.141-7-7c0-3.86,3.14-7,7-7 c3.859,0,7,3.14,7,7C32,28.859,28.859,32,25,32z"></path>
+          </svg>
+        </button>
+        <button type="button" class="toolbar-button dropdown-button" disabled>
+          <!-- Settings Filled icon by Icons8 -->
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" x="0px" y="0px" width="12" height="12" viewBox="0 0 50 50" style="null" class="icon">
+            <path d="M50,28.794v-7.69l-7.343-1.199c-0.382-1.325-0.91-2.599-1.575-3.802l4.278-6.098l-5.438-5.436l-6.021,4.328 c-1.213-0.675-2.497-1.209-3.83-1.593l-1.28-7.306h-7.69L19.914,7.28c-1.344,0.381-2.629,0.909-3.837,1.576l-6.005-4.29L4.636,10 l4.223,6.038c-0.68,1.222-1.218,2.516-1.605,3.861L0,21.107v7.686l7.242,1.283c0.385,1.344,0.923,2.638,1.605,3.86l-4.28,5.986 L10,45.362l6.047-4.235c1.218,0.674,2.506,1.206,3.845,1.588l1.213,7.287h7.685l1.297-7.307c1.338-0.39,2.62-0.927,3.827-1.603 l6.085,4.27l5.438-5.441l-4.347-6.035c0.666-1.205,1.192-2.48,1.571-3.805L50,28.794z M25,32c-3.86,0-7-3.141-7-7c0-3.86,3.14-7,7-7 c3.859,0,7,3.14,7,7C32,28.859,28.859,32,25,32z"></path>
+          </svg>
+        </button>
+      </nav>
+      <br />
+      <br />
+      <nav class="sidebar">
+        <dl>
+          <dt>Personal</dt>
+          <dd>
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" class="icon">
+              <path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans" d="M 24.8125 0.0625 A 1.0001 1.0001 0 0 0 24.28125 0.375 L 0.375 25.25 A 1.0059637 1.0059637 0 1 0 1.84375 26.625 L 5 23.34375 L 5 49 L 5 50 L 6 50 L 44 50 L 45 50 L 45 49 L 45 23.34375 L 48.15625 26.625 A 1.0059637 1.0059637 0 1 0 49.625 25.25 L 25.71875 0.375 A 1.0001 1.0001 0 0 0 24.8125 0.0625 z M 25 2.5 L 43 21.25 L 43 48 L 32 48 L 32 28 L 32 27 L 31 27 L 19 27 L 18 27 L 18 28 L 18 48 L 7 48 L 7 21.25 L 25 2.5 z M 35 5 L 35 8.03125 L 37 10.09375 L 37 7 L 39 7 L 39 12.1875 L 41 14.28125 L 41 5 L 35 5 z M 20 29 L 30 29 L 30 48 L 20 48 L 20 29 z" color="#000" overflow="visible" enable-background="accumulate" font-family="Bitstream Vera Sans"></path>
+            </svg>
+            Home
+          </dd>
+          <dd>
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" class="icon">
+              <path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans" d="M 19 0 L 19 6 L 21 8 L 21 2 L 36 2 L 36 13 L 36 14 L 37 14 L 48 14 L 48 40 L 33 40 L 33 42 L 50 42 L 50 12.59375 L 37.40625 0 L 19 0 z M 38 3.40625 L 46.59375 12 L 38 12 L 38 3.40625 z M 0 8 L 0 9 L 0 49 L 0 50 L 1 50 L 30 50 L 31 50 L 31 49 L 31 21 L 31 20.59375 L 30.71875 20.28125 L 18.71875 8.28125 L 18.40625 8 L 18 8 L 1 8 L 0 8 z M 2 10 L 17 10 L 17 21 L 17 22 L 18 22 L 29 22 L 29 48 L 2 48 L 2 10 z M 19 11.4375 L 27.5625 20 L 19 20 L 19 11.4375 z" color="#000" overflow="visible" enable-background="accumulate" font-family="Bitstream Vera Sans"></path>
+            </svg>
+            Documents
+          </dd>
+          <dd>
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" class="icon">
+              <path d="M43,3v35.004c0,0-0.125,5.996-6.984,5.996C28.506,44,28,39.127,28,38c0-2.41,0.942-5.037,8-5.037c3.249,0,4-0.835,4-2.963 c0,0,0-15.463,0-16.78s-0.08-1.793-1.543-1.462c-2.517,0.569-18.957,4.133-19.613,4.29S18,16.594,18,17.75c0,2.127,0,22.997,0,25.25 s-1.742,6-8,6s-7-3.998-7-6c0-2.973,2.25-4.891,7.007-4.891C14.438,38.109,15,36.86,15,35c0-6.633,0-26.04,0-27 s0.391-1.609,1.366-1.824c1.631-0.358,24.78-5.131,24.78-5.131S43,0.622,43,3z"></path>
+            </svg>
+            Music
+          </dd>
+          <dd>
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" class="icon">
+              <path d="M 17 5 C 15.683 5 14.893 6.274 14.125 7.5 C 13.816 7.993 13.235 8.905 13 9 L 3 9 C 1.346 9 0 10.346 0 12 L 0 39 C 0 40.654 1.346 42 3 42 L 47 42 C 48.654 42 50 40.654 50 39 L 50 12 C 50 10.346 48.654 9 47 9 L 37.03125 9 C 36.75225 8.899 36.185 7.994 35.875 7.5 C 35.106 6.275 34.317 5 33 5 L 17 5 z M 25 11 C 32.168 11 38 16.832 38 24 C 38 31.168 32.168 37 25 37 C 17.832 37 12 31.168 12 24 C 12 16.832 17.832 11 25 11 z M 25 13 C 18.935 13 14 17.935 14 24 C 14 30.065 18.935 35 25 35 C 31.065 35 36 30.065 36 24 C 36 17.935 31.065 13 25 13 z M 8 14 L 9 14 C 10.104 14 11 14.896 11 16 C 11 17.104 10.104 18 9 18 L 8 18 C 6.896 18 6 17.104 6 16 C 6 14.896 6.896 14 8 14 z M 25 15 C 29.963 15 34 19.038 34 24 C 34 28.963 29.963 33 25 33 C 20.038 33 16 28.963 16 24 C 16 19.038 20.038 15 25 15 z M 25 17 C 21.14 17 18 20.14 18 24 C 18 27.859 21.14 31 25 31 C 28.859 31 32 27.859 32 24 C 32 20.14 28.859 17 25 17 z"></path>
+            </svg>
+            Pictures
+          </dd>
+          <dd>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" enable-background="new 0 0 50 50" class="icon">
+              <path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans" d="M 4 4 L 4 5 L 4 45 L 4 46 L 5 46 L 45 46 L 46 46 L 46 45 L 46 5 L 46 4 L 45 4 L 5 4 L 4 4 z M 6 6 L 10 6 L 10 9 L 6 9 L 6 6 z M 12 6 L 38 6 L 38 24 L 12 24 L 12 6 z M 40 6 L 44 6 L 44 9 L 40 9 L 40 6 z M 6 11 L 10 11 L 10 14 L 6 14 L 6 11 z M 40 11 L 44 11 L 44 14 L 40 14 L 40 11 z M 6 16 L 10 16 L 10 19 L 6 19 L 6 16 z M 40 16 L 44 16 L 44 19 L 40 19 L 40 16 z M 6 21 L 10 21 L 10 24 L 6 24 L 6 21 z M 40 21 L 44 21 L 44 24 L 40 24 L 40 21 z M 6 26 L 10 26 L 10 29 L 6 29 L 6 26 z M 12 26 L 38 26 L 38 44 L 12 44 L 12 26 z M 40 26 L 44 26 L 44 29 L 40 29 L 40 26 z M 6 31 L 10 31 L 10 34 L 6 34 L 6 31 z M 40 31 L 44 31 L 44 34 L 40 34 L 40 31 z M 6 36 L 10 36 L 10 39 L 6 39 L 6 36 z M 40 36 L 44 36 L 44 39 L 40 39 L 40 36 z M 6 41 L 10 41 L 10 44 L 6 44 L 6 41 z M 40 41 L 44 41 L 44 44 L 40 44 L 40 41 z"></path>
+            </svg>
+            Videos
+          </dd>
+        </dl>
+      </nav>
+    </article>
+  </section>
+
+  <section class="windows10">
+    <article id="windows10-buttons">
+      <h2>Buttons</h2>
+
+      <button>Default Button</button>
+      <button class="primary">Primary Button</button>
+      <button disabled>Disabled Button</button>
+    </article>
+
+    <article id="windows10-inputs">
+      <h2>Inputs</h2>
+
+      <input type="checkbox" />
+      <input type="checkbox" checked />
+      <input type="checkbox" disabled />
+      <br />
+      <br />
+      <input type="checkbox" class="switch" />
+      <input type="checkbox" class="switch" checked />
+      <input type="checkbox" class="switch" disabled />
+      <br />
+      <br />
+      <input type="color" />
+      <input type="color" disabled />
+      <br />
+      <br />
+      <input type="date" />
+      <input type="date" disabled />
+      <br />
+      <br />
+      <input type="datetime" />
+      <input type="datetime" disabled />
+      <br />
+      <br />
+      <input type="email" />
+      <input type="email" disabled />
+      <br />
+      <br />
+      <input type="file" />
+      <input type="file" disabled />
+      <br />
+      <br />
+      <input type="file" class="button-only" />
+      <input type="file" class="button-only" disabled />
+      <br />
+      <br />
+      <input type="month" />
+      <input type="month" disabled />
+      <br />
+      <br />
+      <input type="number" />
+      <input type="number" disabled />
+      <br />
+      <br />
+      <input type="password" />
+      <input type="password" disabled />
+      <br />
+      <br />
+      <input type="radio" />
+      <input type="radio" checked />
+      <input type="radio" disabled />
+      <br />
+      <br />
+      <input type="reset" />
+      <input type="reset" disabled />
+      <br />
+      <br />
+      <input type="search" placeholder="Search" class="empty" />
+      <input type="search" placeholder="Search" disabled />
+      <br />
+      <br />
+      <input type="tel" />
+      <input type="tel" disabled />
+      <br />
+      <br />
+      <input type="text" />
+      <input type="text" disabled />
+      <br />
+      <br />
+      <input type="time" />
+      <input type="time" disabled />
+      <br />
+      <br />
+      <input type="url" />
+      <input type="url" disabled />
+      <br />
+      <br />
+      <input type="week" />
+      <input type="week" disabled />
+      <br />
+      <br />
+      <select>
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+        <optgroup label="Group 1">
+          <option>Option 4</option>
+          <option>Option 5</option>
+          <option>Option 6</option>
+        </optgroup>
+      </select>
+      <select disabled>
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+      </select>
+      <br />
+      <br />
+      <input type="range" />
+      <input type="range" disabled />
+      <br />
+      <br />
+      <textarea rows="8" cols="40"></textarea>
+      <textarea rows="8" cols="40" disabled></textarea>
+    </article>
+
+    <article id="windows10-controls">
+      <h2>Controls</h2>
+
+      <progress value="50" max="100">50%</progress>
+
+      <nav class="toolbar">
+        <div class="grouped-buttons">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="icon">
+              <path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans" d="M 19.03125 4.28125 L 8.03125 15.28125 L 7.34375 16 L 8.03125 16.71875 L 19.03125 27.71875 L 20.46875 26.28125 L 10.1875 16 L 20.46875 5.71875 L 19.03125 4.28125 z" color="#000" overflow="visible" font-family="Bitstream Vera Sans"></path>
+            </svg>
+          </button>
+          <button disabled>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="icon">
+              <path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans" d="M 12.96875 4.28125 L 11.53125 5.71875 L 21.8125 16 L 11.53125 26.28125 L 12.96875 27.71875 L 23.96875 16.71875 L 24.65625 16 L 23.96875 15.28125 L 12.96875 4.28125 z" color="#000" overflow="visible" font-family="Bitstream Vera Sans"></path>
+            </svg>
+          </button>
+        </div>
+
+        <div class="segmented-control">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="icon">
+              <path d="M16,7c2.8,0,5,2.2,5,5c0,1.3-0.5,2.4-1.3,3.3C21.6,16,23,17.8,23,20c0,2.8-2.2,5-5,5H7V7H16 M9,15h7c1.7,0,3-1.3,3-3 s-1.3-3-3-3H9V15 M9,23h9c1.7,0,3-1.3,3-3s-1.3-3-3-3H9V23 M16,5H7H5v2v18v2h2h11c3.9,0,7-3.1,7-7c0-2.1-1-4.1-2.5-5.4 c0.3-0.8,0.5-1.7,0.5-2.6C23,8.1,19.9,5,16,5L16,5z M11,11h5c0.6,0,1,0.4,1,1s-0.4,1-1,1h-5V11L11,11z M11,19h7c0.6,0,1,0.4,1,1 s-0.4,1-1,1h-7V19L11,19z"></path>
+            </svg>
+          </button>
+          <button class="selected">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="icon">
+              <path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans" d="M 11.75 5 L 11.6875 5.9375 L 11.5 8.9375 L 11.4375 10 L 12.5 10 L 13.4375 10 L 12.5625 22 L 11.5 22 L 10.5625 22 L 10.5 22.9375 L 10.3125 25.9375 L 10.21875 27 L 11.3125 27 L 19.3125 27 L 20.25 27 L 20.3125 26.0625 L 20.5 23.0625 L 20.5625 22 L 19.5 22 L 18.5625 22 L 19.4375 10 L 20.5 10 L 21.4375 10 L 21.5 9.0625 L 21.6875 6.0625 L 21.78125 5 L 20.6875 5 L 12.6875 5 L 11.75 5 z M 13.625 7 L 19.625 7 L 19.5625 8 L 18.5 8 L 17.5625 8 L 17.5 8.9375 L 16.5 22.9375 L 16.4375 24 L 17.5 24 L 18.4375 24 L 18.375 25 L 12.375 25 L 12.4375 24 L 13.5 24 L 14.4375 24 L 14.5 23.0625 L 15.5 9.0625 L 15.5625 8 L 14.5 8 L 13.5625 8 L 13.625 7 z" color="#000" overflow="visible" font-family="Bitstream Vera Sans"></path>
+            </svg>
+          </button>
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="icon">
+              <path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans" d="M 8 4 L 8 16 C 8 20.429915 11.570085 24 16 24 C 20.429915 24 24 20.429915 24 16 L 24 4 L 22 4 L 22 16 C 22 19.370085 19.370085 22 16 22 C 12.629915 22 10 19.370085 10 16 L 10 4 L 8 4 z M 6 26 L 6 28 L 26 28 L 26 26 L 6 26 z" color="#000" overflow="visible" font-family="Bitstream Vera Sans"></path>
+            </svg>
+          </button>
+        </div>
+
+        <input type="search" placeholder="Search" />
+
+        <select>
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+          <optgroup label="Group 1">
+            <option>Option 4</option>
+            <option>Option 5</option>
+            <option>Option 6</option>
+          </optgroup>
+        </select>
+
+        <button type="button" class="toolbar-button text-only">Toolbar Button</button>
+        <button type="button" class="toolbar-button dropdown-button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="icon">
+            <path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Sans" d="M 13.1875 3 L 13.03125 3.8125 L 12.4375 6.78125 C 11.485754 7.1553109 10.623396 7.6844912 9.84375 8.3125 L 6.9375 7.3125 L 6.15625 7.0625 L 5.75 7.78125 L 3.75 11.21875 L 3.34375 11.9375 L 3.9375 12.46875 L 6.1875 14.4375 C 6.1039547 14.950261 6 15.459106 6 16 C 6 16.540894 6.1039547 17.049739 6.1875 17.5625 L 3.9375 19.53125 L 3.34375 20.0625 L 3.75 20.78125 L 5.75 24.21875 L 6.15625 24.9375 L 6.9375 24.6875 L 9.84375 23.6875 C 10.62363 24.315572 11.486197 24.844746 12.4375 25.21875 L 13.03125 28.1875 L 13.1875 29 L 14 29 L 18 29 L 18.8125 29 L 18.96875 28.1875 L 19.5625 25.21875 C 20.514246 24.844689 21.376604 24.315509 22.15625 23.6875 L 25.0625 24.6875 L 25.84375 24.9375 L 26.25 24.21875 L 28.25 20.78125 L 28.65625 20.0625 L 28.0625 19.53125 L 25.8125 17.5625 C 25.896017 17.049492 26 16.540894 26 16 C 26 15.459106 25.896045 14.950261 25.8125 14.4375 L 28.0625 12.46875 L 28.65625 11.9375 L 28.25 11.21875 L 26.25 7.78125 L 25.84375 7.0625 L 25.0625 7.3125 L 22.15625 8.3125 C 21.37637 7.684428 20.513803 7.1552541 19.5625 6.78125 L 18.96875 3.8125 L 18.8125 3 L 18 3 L 14 3 L 13.1875 3 z M 14.8125 5 L 17.1875 5 L 17.6875 7.59375 L 17.8125 8.1875 L 18.375 8.375 C 19.512308 8.729911 20.54376 9.3303666 21.40625 10.125 L 21.84375 10.53125 L 22.40625 10.34375 L 24.9375 9.46875 L 26.125 11.5 L 24.125 13.28125 L 23.65625 13.65625 L 23.8125 14.25 C 23.940067 14.820459 24 15.402764 24 16 C 24 16.597236 23.94016 17.178228 23.8125 17.75 L 23.6875 18.34375 L 24.125 18.71875 L 26.125 20.5 L 24.9375 22.53125 L 22.40625 21.65625 L 21.84375 21.46875 L 21.40625 21.875 C 20.543507 22.669866 19.513125 23.27011 18.375 23.625 L 17.8125 23.8125 L 17.6875 24.40625 L 17.1875 27 L 14.8125 27 L 14.3125 24.40625 L 14.1875 23.8125 L 13.625 23.625 C 12.487692 23.270089 11.45624 22.669633 10.59375 21.875 L 10.15625 21.46875 L 9.59375 21.65625 L 7.0625 22.53125 L 5.875 20.5 L 7.875 18.71875 L 8.34375 18.34375 L 8.1875 17.75 C 8.0599327 17.179541 8 16.597236 8 16 C 8 15.402764 8.0599327 14.820459 8.1875 14.25 L 8.34375 13.65625 L 7.875 13.28125 L 5.875 11.5 L 7.0625 9.46875 L 9.59375 10.34375 L 10.15625 10.53125 L 10.59375 10.125 C 11.456493 9.3301336 12.486875 8.7298898 13.625 8.375 L 14.1875 8.1875 L 14.3125 7.59375 L 14.8125 5 z M 16 11 C 13.250421 11 11 13.250421 11 16 C 11 18.749579 13.250421 21 16 21 C 18.749579 21 21 18.749579 21 16 C 21 13.250421 18.749579 11 16 11 z M 16 13 C 17.668699 13 19 14.331301 19 16 C 19 17.668699 17.668699 19 16 19 C 14.331301 19 13 17.668699 13 16 C 13 14.331301 14.331301 13 16 13 z" color="#000" overflow="visible" font-family="Sans"></path>
+          </svg>
+        </button>
+        <button type="button" class="toolbar-button dropdown-button" disabled>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="icon">
+            <path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Sans" d="M 13.1875 3 L 13.03125 3.8125 L 12.4375 6.78125 C 11.485754 7.1553109 10.623396 7.6844912 9.84375 8.3125 L 6.9375 7.3125 L 6.15625 7.0625 L 5.75 7.78125 L 3.75 11.21875 L 3.34375 11.9375 L 3.9375 12.46875 L 6.1875 14.4375 C 6.1039547 14.950261 6 15.459106 6 16 C 6 16.540894 6.1039547 17.049739 6.1875 17.5625 L 3.9375 19.53125 L 3.34375 20.0625 L 3.75 20.78125 L 5.75 24.21875 L 6.15625 24.9375 L 6.9375 24.6875 L 9.84375 23.6875 C 10.62363 24.315572 11.486197 24.844746 12.4375 25.21875 L 13.03125 28.1875 L 13.1875 29 L 14 29 L 18 29 L 18.8125 29 L 18.96875 28.1875 L 19.5625 25.21875 C 20.514246 24.844689 21.376604 24.315509 22.15625 23.6875 L 25.0625 24.6875 L 25.84375 24.9375 L 26.25 24.21875 L 28.25 20.78125 L 28.65625 20.0625 L 28.0625 19.53125 L 25.8125 17.5625 C 25.896017 17.049492 26 16.540894 26 16 C 26 15.459106 25.896045 14.950261 25.8125 14.4375 L 28.0625 12.46875 L 28.65625 11.9375 L 28.25 11.21875 L 26.25 7.78125 L 25.84375 7.0625 L 25.0625 7.3125 L 22.15625 8.3125 C 21.37637 7.684428 20.513803 7.1552541 19.5625 6.78125 L 18.96875 3.8125 L 18.8125 3 L 18 3 L 14 3 L 13.1875 3 z M 14.8125 5 L 17.1875 5 L 17.6875 7.59375 L 17.8125 8.1875 L 18.375 8.375 C 19.512308 8.729911 20.54376 9.3303666 21.40625 10.125 L 21.84375 10.53125 L 22.40625 10.34375 L 24.9375 9.46875 L 26.125 11.5 L 24.125 13.28125 L 23.65625 13.65625 L 23.8125 14.25 C 23.940067 14.820459 24 15.402764 24 16 C 24 16.597236 23.94016 17.178228 23.8125 17.75 L 23.6875 18.34375 L 24.125 18.71875 L 26.125 20.5 L 24.9375 22.53125 L 22.40625 21.65625 L 21.84375 21.46875 L 21.40625 21.875 C 20.543507 22.669866 19.513125 23.27011 18.375 23.625 L 17.8125 23.8125 L 17.6875 24.40625 L 17.1875 27 L 14.8125 27 L 14.3125 24.40625 L 14.1875 23.8125 L 13.625 23.625 C 12.487692 23.270089 11.45624 22.669633 10.59375 21.875 L 10.15625 21.46875 L 9.59375 21.65625 L 7.0625 22.53125 L 5.875 20.5 L 7.875 18.71875 L 8.34375 18.34375 L 8.1875 17.75 C 8.0599327 17.179541 8 16.597236 8 16 C 8 15.402764 8.0599327 14.820459 8.1875 14.25 L 8.34375 13.65625 L 7.875 13.28125 L 5.875 11.5 L 7.0625 9.46875 L 9.59375 10.34375 L 10.15625 10.53125 L 10.59375 10.125 C 11.456493 9.3301336 12.486875 8.7298898 13.625 8.375 L 14.1875 8.1875 L 14.3125 7.59375 L 14.8125 5 z M 16 11 C 13.250421 11 11 13.250421 11 16 C 11 18.749579 13.250421 21 16 21 C 18.749579 21 21 18.749579 21 16 C 21 13.250421 18.749579 11 16 11 z M 16 13 C 17.668699 13 19 14.331301 19 16 C 19 17.668699 17.668699 19 16 19 C 14.331301 19 13 17.668699 13 16 C 13 14.331301 14.331301 13 16 13 z" color="#000" overflow="visible" font-family="Sans"></path>
+          </svg>
+        </button>
+      </nav>
+      <br />
+      <br />
+      <nav class="sidebar">
+        <dl>
+          <dt>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="icon">
+              <path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans" d="M 4 7 L 4 9 L 28 9 L 28 7 L 4 7 z M 4 15 L 4 17 L 28 17 L 28 15 L 4 15 z M 4 23 L 4 25 L 28 25 L 28 23 L 4 23 z" color="#000" overflow="visible" font-family="Bitstream Vera Sans"></path>
+            </svg>
+            Personal
+          </dt>
+          <dd>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32" class="icon">
+              <path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans" d="M 16 2.59375 L 15.28125 3.28125 L 2.28125 16.28125 L 3.71875 17.71875 L 5 16.4375 L 5 27 L 5 28 L 6 28 L 13 28 L 14 28 L 14 27 L 14 18 L 18 18 L 18 27 L 18 28 L 19 28 L 26 28 L 27 28 L 27 27 L 27 16.4375 L 28.28125 17.71875 L 29.71875 16.28125 L 16.71875 3.28125 L 16 2.59375 z M 16 5.4375 L 25 14.4375 L 25 26 L 20 26 L 20 17 L 20 16 L 19 16 L 13 16 L 12 16 L 12 17 L 12 26 L 7 26 L 7 14.4375 L 16 5.4375 z" color="#000" overflow="visible" font-family="Bitstream Vera Sans"></path>
+            </svg>
+            Home
+          </dd>
+          <dd>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="icon">
+              <path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans" d="M 4 4 L 4 5 L 4 23 L 4 24 L 5 24 L 11 24 L 11 22 L 6 22 L 6 6 L 18 6 L 18 7 L 20 7 L 20 5 L 20 4 L 19 4 L 5 4 L 4 4 z M 12 8 L 12 9 L 12 27 L 12 28 L 13 28 L 27 28 L 28 28 L 28 27 L 28 9 L 28 8 L 27 8 L 13 8 L 12 8 z M 14 10 L 26 10 L 26 26 L 14 26 L 14 10 z" color="#000" overflow="visible" font-family="Bitstream Vera Sans"></path>
+            </svg>
+            Documents
+          </dd>
+          <dd>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="icon">
+              <path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans" d="M 27 3.78125 L 25.8125 4.03125 L 9.8125 7.03125 L 9 7.15625 L 9 8 L 9 20.5625 C 8.4074074 20.214051 7.7324315 20 7 20 C 4.8027056 20 3 21.802706 3 24 C 3 26.197294 4.8027056 28 7 28 C 9.1972944 28 11 26.197294 11 24 L 11 12.8125 L 25 10.1875 L 25 17.5625 C 24.407407 17.214051 23.732431 17 23 17 C 20.802706 17 19 18.802706 19 21 C 19 23.197294 20.802706 25 23 25 C 25.197294 25 27 23.197294 27 21 L 27 5 L 27 3.78125 z M 25 6.1875 L 25 8.1875 L 11 10.8125 L 11 8.8125 L 25 6.1875 z M 23 19 C 24.116414 19 25 19.883586 25 21 C 25 22.116414 24.116414 23 23 23 C 21.883586 23 21 22.116414 21 21 C 21 19.883586 21.883586 19 23 19 z M 7 22 C 8.116414 22 9 22.883586 9 24 C 9 25.116414 8.116414 26 7 26 C 5.883586 26 5 25.116414 5 24 C 5 22.883586 5.883586 22 7 22 z" color="#000" overflow="visible" font-family="Bitstream Vera Sans"></path>
+            </svg>
+            Music
+          </dd>
+          <dd>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="icon">
+              <path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans" d="M 2 5 L 2 6 L 2 26 L 2 27 L 3 27 L 29 27 L 30 27 L 30 26 L 30 6 L 30 5 L 29 5 L 3 5 L 2 5 z M 4 7 L 28 7 L 28 20.90625 L 22.71875 15.59375 L 22 14.875 L 21.28125 15.59375 L 17.46875 19.40625 L 11.71875 13.59375 L 11 12.875 L 10.28125 13.59375 L 4 19.875 L 4 7 z M 24 9 C 22.895431 9 22 9.8954305 22 11 C 22 12.104569 22.895431 13 24 13 C 25.104569 13 26 12.104569 26 11 C 26 9.8954305 25.104569 9 24 9 z M 11 15.71875 L 20.1875 25 L 4 25 L 4 22.71875 L 11 15.71875 z M 22 17.71875 L 28 23.71875 L 28 25 L 23.03125 25 L 18.875 20.8125 L 22 17.71875 z" color="#000" overflow="visible" font-family="Bitstream Vera Sans"></path>
+            </svg>
+            Pictures
+          </dd>
+          <dd>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="icon">
+              <path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans" d="M 4 4 L 4 5 L 4 27 L 4 28 L 5 28 L 27 28 L 28 28 L 28 27 L 28 5 L 28 4 L 27 4 L 5 4 L 4 4 z M 6 6 L 8 6 L 8 7 L 10 7 L 10 6 L 22 6 L 22 7 L 24 7 L 24 6 L 26 6 L 26 26 L 24 26 L 24 25 L 22 25 L 22 26 L 10 26 L 10 25 L 8 25 L 8 26 L 6 26 L 6 6 z M 8 9 L 8 11 L 10 11 L 10 9 L 8 9 z M 22 9 L 22 11 L 24 11 L 24 9 L 22 9 z M 8 13 L 8 15 L 10 15 L 10 13 L 8 13 z M 22 13 L 22 15 L 24 15 L 24 13 L 22 13 z M 8 17 L 8 19 L 10 19 L 10 17 L 8 17 z M 22 17 L 22 19 L 24 19 L 24 17 L 22 17 z M 8 21 L 8 23 L 10 23 L 10 21 L 8 21 z M 22 21 L 22 23 L 24 23 L 24 21 L 22 21 z"></path>
+            </svg>
+            Videos
+          </dd>
+        </dl>
+      </nav>
+    </article>
+  </section>
+
+  <section class="elementaryos">
+    <article id="elementaryos-buttons">
+      <h2>Buttons</h2>
+
+      <button>Default Button</button>
+      <button class="primary">Primary Button</button>
+      <button disabled>Disabled Button</button>
+    </article>
+
+    <article id="elementaryos-inputs">
+      <h2>Inputs</h2>
+
+      <input type="checkbox" />
+      <input type="checkbox" checked />
+      <input type="checkbox" disabled />
+      <br />
+      <br />
+      <input type="checkbox" class="switch" />
+      <input type="checkbox" class="switch" checked />
+      <input type="checkbox" class="switch" disabled />
+      <br />
+      <br />
+      <input type="color" />
+      <input type="color" disabled />
+      <br />
+      <br />
+      <input type="date" />
+      <input type="date" disabled />
+      <br />
+      <br />
+      <input type="datetime" />
+      <input type="datetime" disabled />
+      <br />
+      <br />
+      <input type="email" />
+      <input type="email" disabled />
+      <br />
+      <br />
+      <input type="file" />
+      <input type="file" disabled />
+      <br />
+      <br />
+      <input type="file" class="button-only" />
+      <input type="file" class="button-only" disabled />
+      <br />
+      <br />
+      <input type="month" />
+      <input type="month" disabled />
+      <br />
+      <br />
+      <input type="number" />
+      <input type="number" disabled />
+      <br />
+      <br />
+      <input type="password" />
+      <input type="password" disabled />
+      <br />
+      <br />
+      <input type="radio" />
+      <input type="radio" checked />
+      <input type="radio" disabled />
+      <br />
+      <br />
+      <input type="reset" />
+      <input type="reset" disabled />
+      <br />
+      <br />
+      <input type="search" placeholder="Search" />
+      <input type="search" placeholder="Search" disabled />
+      <br />
+      <br />
+      <input type="tel" />
+      <input type="tel" disabled />
+      <br />
+      <br />
+      <input type="text" />
+      <input type="text" disabled />
+      <br />
+      <br />
+      <input type="time" />
+      <input type="time" disabled />
+      <br />
+      <br />
+      <input type="url" />
+      <input type="url" disabled />
+      <br />
+      <br />
+      <input type="week" />
+      <input type="week" disabled />
+      <br />
+      <br />
+      <select>
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+        <optgroup label="Group 1">
+          <option>Option 4</option>
+          <option>Option 5</option>
+          <option>Option 6</option>
+        </optgroup>
+      </select>
+      <select disabled>
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+      </select>
+      <br />
+      <br />
+      <input type="range" />
+      <input type="range" disabled />
+      <br />
+      <br />
+      <textarea rows="8" cols="40"></textarea>
+      <textarea rows="8" cols="40" disabled></textarea>
+    </article>
+
+    <article id="elementaryos-controls">
+      <h2>Controls</h2>
+
+      <progress value="50" max="100">50%</progress>
+
+      <nav class="toolbar">
+        <div class="grouped-buttons">
+          <button>
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve" class="icon">
+              <polygon fill="#2196F3" points="30.9,43 34,39.9 18.1,24 34,8.1 30.9,5 12,24 "></polygon>
+            </svg>
+          </button>
+          <button disabled>
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve" class="icon">
+              <polygon fill="#2196F3" points="17.1,5 14,8.1 29.9,24 14,39.9 17.1,43 36,24 "></polygon>
+            </svg>
+          </button>
+        </div>
+
+        <div class="segmented-control">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" x="0px" y="0px" width="12" height="12" viewBox="0 0 50 50" style="null" class="icon">
+              <path d="M40.952,25.921c-0.935-1.365-2.22-2.443-3.833-3.218c0.994-0.703,1.808-1.516,2.43-2.43 c0.993-1.458,1.497-3.282,1.497-5.423c0-1.944-0.334-3.617-0.992-4.973c-0.668-1.377-1.626-2.498-2.845-3.331 c-1.181-0.809-2.608-1.396-4.244-1.747c-1.575-0.336-3.335-0.507-5.23-0.507H9.59c-0.552,0-1,0.448-1,1v38.555c0,0.553,0.448,1,1,1 h18.684c1.809,0,3.594-0.229,5.306-0.681c1.744-0.461,3.324-1.184,4.694-2.147c1.401-0.987,2.531-2.275,3.357-3.83 c0.83-1.562,1.251-3.419,1.251-5.519C42.882,30.067,42.232,27.797,40.952,25.921z M18.068,11.88h7.938 c0.756,0,1.485,0.063,2.188,0.188c0.701,0.127,1.322,0.352,1.863,0.676c0.539,0.324,0.971,0.775,1.295,1.35 c0.324,0.576,0.486,1.315,0.486,2.214c0,1.62-0.486,2.79-1.458,3.51c-0.972,0.721-2.214,1.08-3.726,1.08h-8.586V11.88z M32.891,34.669c-0.342,0.647-0.801,1.161-1.377,1.539s-1.242,0.647-1.998,0.81s-1.548,0.243-2.375,0.243h-9.073V26.677h9.234 c1.837,0,3.312,0.425,4.429,1.269c1.115,0.847,1.674,2.261,1.674,4.24C33.404,33.193,33.232,34.021,32.891,34.669z"></path>
+            </svg>
+          </button>
+          <button class="selected">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" x="0px" y="0px" width="12" height="12" viewBox="0 0 50 50" style="null" class="icon">
+              <path d="M23.108,44.85h-5.13c-0.301,0-0.586-0.136-0.776-0.37c-0.19-0.233-0.264-0.541-0.202-0.836l8.1-38.556 c0.097-0.463,0.505-0.794,0.979-0.794h5.13c0.302,0,0.587,0.136,0.776,0.37s0.265,0.541,0.202,0.836l-8.1,38.557 C23.989,44.519,23.581,44.85,23.108,44.85z"></path>
+            </svg>
+          </button>
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" x="0px" y="0px" width="12" height="12" viewBox="0 0 50 50" style="null" class="icon">
+              <path d="M 10 6 C 9.448 6 9 6.448 9 7 L 9 28 C 9 36.822 16.178 44 25 44 C 33.822 44 41 36.822 41 28 L 41 7 C 41 6.448 40.553 6 40 6 L 36 6 C 35.447 6 35 6.448 35 7 L 35 28 C 35 33.514 30.514 38 25 38 C 19.486 38 15 33.514 15 28 L 15 7 C 15 6.448 14.552 6 14 6 L 10 6 z M 11 47 C 10.448 47 10 47.447 10 48 C 10 48.553 10.448 49 11 49 L 39 49 C 39.553 49 40 48.553 40 48 C 40 47.447 39.553 47 39 47 L 11 47 z"></path>
+            </svg>
+          </button>
+        </div>
+
+        <input type="search" placeholder="Search" />
+
+        <select>
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+          <optgroup label="Group 1">
+            <option>Option 4</option>
+            <option>Option 5</option>
+            <option>Option 6</option>
+          </optgroup>
+        </select>
+
+        <button type="button" class="toolbar-button text-only">Toolbar Button</button>
+        <button type="button" class="toolbar-button dropdown-button">
+          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve" class="icon">
+            <path fill="#607D8B" d="M39.6,27.2c0.1-0.7,0.2-1.4,0.2-2.2s-0.1-1.5-0.2-2.2l4.5-3.2c0.4-0.3,0.6-0.9,0.3-1.4L40,10.8
+            c-0.3-0.5-0.8-0.7-1.3-0.4l-5,2.3c-1.2-0.9-2.4-1.6-3.8-2.2l-0.5-5.5c-0.1-0.5-0.5-0.9-1-0.9h-8.6c-0.5,0-1,0.4-1,0.9l-0.5,5.5
+            c-1.4,0.6-2.7,1.3-3.8,2.2l-5-2.3c-0.5-0.2-1.1,0-1.3,0.4l-4.3,7.4c-0.3,0.5-0.1,1.1,0.3,1.4l4.5,3.2c-0.1,0.7-0.2,1.4-0.2,2.2
+            s0.1,1.5,0.2,2.2L4,30.4c-0.4,0.3-0.6,0.9-0.3,1.4L8,39.2c0.3,0.5,0.8,0.7,1.3,0.4l5-2.3c1.2,0.9,2.4,1.6,3.8,2.2l0.5,5.5
+            c0.1,0.5,0.5,0.9,1,0.9h8.6c0.5,0,1-0.4,1-0.9l0.5-5.5c1.4-0.6,2.7-1.3,3.8-2.2l5,2.3c0.5,0.2,1.1,0,1.3-0.4l4.3-7.4
+            c0.3-0.5,0.1-1.1-0.3-1.4L39.6,27.2z M24,35c-5.5,0-10-4.5-10-10c0-5.5,4.5-10,10-10c5.5,0,10,4.5,10,10C34,30.5,29.5,35,24,35z"></path>
+            <path fill="#455A64" d="M24,13c-6.6,0-12,5.4-12,12c0,6.6,5.4,12,12,12s12-5.4,12-12C36,18.4,30.6,13,24,13z M24,30
+            c-2.8,0-5-2.2-5-5c0-2.8,2.2-5,5-5s5,2.2,5,5C29,27.8,26.8,30,24,30z"></path>
+          </svg>
+        </button>
+        <button type="button" class="toolbar-button dropdown-button" disabled>
+          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve" class="icon">
+            <path fill="#607D8B" d="M39.6,27.2c0.1-0.7,0.2-1.4,0.2-2.2s-0.1-1.5-0.2-2.2l4.5-3.2c0.4-0.3,0.6-0.9,0.3-1.4L40,10.8
+            c-0.3-0.5-0.8-0.7-1.3-0.4l-5,2.3c-1.2-0.9-2.4-1.6-3.8-2.2l-0.5-5.5c-0.1-0.5-0.5-0.9-1-0.9h-8.6c-0.5,0-1,0.4-1,0.9l-0.5,5.5
+            c-1.4,0.6-2.7,1.3-3.8,2.2l-5-2.3c-0.5-0.2-1.1,0-1.3,0.4l-4.3,7.4c-0.3,0.5-0.1,1.1,0.3,1.4l4.5,3.2c-0.1,0.7-0.2,1.4-0.2,2.2
+            s0.1,1.5,0.2,2.2L4,30.4c-0.4,0.3-0.6,0.9-0.3,1.4L8,39.2c0.3,0.5,0.8,0.7,1.3,0.4l5-2.3c1.2,0.9,2.4,1.6,3.8,2.2l0.5,5.5
+            c0.1,0.5,0.5,0.9,1,0.9h8.6c0.5,0,1-0.4,1-0.9l0.5-5.5c1.4-0.6,2.7-1.3,3.8-2.2l5,2.3c0.5,0.2,1.1,0,1.3-0.4l4.3-7.4
+            c0.3-0.5,0.1-1.1-0.3-1.4L39.6,27.2z M24,35c-5.5,0-10-4.5-10-10c0-5.5,4.5-10,10-10c5.5,0,10,4.5,10,10C34,30.5,29.5,35,24,35z"></path>
+            <path fill="#455A64" d="M24,13c-6.6,0-12,5.4-12,12c0,6.6,5.4,12,12,12s12-5.4,12-12C36,18.4,30.6,13,24,13z M24,30
+            c-2.8,0-5-2.2-5-5c0-2.8,2.2-5,5-5s5,2.2,5,5C29,27.8,26.8,30,24,30z"></path>
+          </svg>
+        </button>
+      </nav>
+      <br />
+      <br />
+      <nav class="sidebar">
+        <dl>
+          <dt>Personal</dt>
+          <dd>
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve" class="icon">
+              <polygon fill="#E8EAF6" points="42,39 6,39 6,23 24,6 42,23 "></polygon>
+              <g>
+              	<polygon fill="#C5CAE9" points="39,21 34,16 34,9 39,9 	"></polygon>
+              	<rect x="6" y="39" fill="#C5CAE9" width="36" height="5"></rect>
+              </g>
+              <polygon fill="#B71C1C" points="24,4.3 4,22.9 6,25.1 24,8.4 42,25.1 44,22.9 "></polygon>
+              <rect x="18" y="28" fill="#D84315" width="12" height="16"></rect>
+              <rect x="21" y="17" fill="#01579B" width="6" height="6"></rect>
+              <path fill="#FF8A65" d="M27.5,35.5c-0.3,0-0.5,0.2-0.5,0.5v2c0,0.3,0.2,0.5,0.5,0.5S28,38.3,28,38v-2C28,35.7,27.8,35.5,27.5,35.5z"></path>
+            </svg>
+            Home
+          </dd>
+          <dd>
+            <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve" class="icon">
+              <polygon fill="#42A5F5" points="31,36 6,36 6,3 23,3 31,11 "></polygon>
+              <polygon fill="#E1F5FE" points="29.5,12 22,12 22,4.5 "></polygon>
+              <g>
+              	<rect x="11" y="16" fill="#1565C0" width="16" height="2"></rect>
+              	<rect x="11" y="20" fill="#1565C0" width="12" height="2"></rect>
+              	<rect x="11" y="24" fill="#1565C0" width="16" height="2"></rect>
+              	<rect x="11" y="28" fill="#1565C0" width="12" height="2"></rect>
+              </g>
+              <polygon fill="#90CAF9" points="42,44 17,44 17,11 34,11 42,19 "></polygon>
+              <polygon fill="#E1F5FE" points="40.5,20 33,20 33,12.5 "></polygon>
+              <g>
+              	<rect x="22" y="24" fill="#1976D2" width="15" height="2"></rect>
+              	<rect x="22" y="28" fill="#1976D2" width="11" height="2"></rect>
+              	<rect x="22" y="32" fill="#1976D2" width="15" height="2"></rect>
+              	<rect x="22" y="36" fill="#1976D2" width="11" height="2"></rect>
+              </g>
+            </svg>
+            Documents
+          </dd>
+          <dd>
+            <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve" class="icon">
+              <path fill="#F44336" d="M16,13v19.593c0,0,0,0.221,0,0.232c0,0-1.177-0.597-3.708-0.242C8.571,33.106,6,35.674,6,38.644
+              	c0,2.975,3.018,4.79,6.738,4.267C16.464,42.393,19,39.874,19,36.904v-15.32l17-5.583v12.905c0,0,0,0.002,0,0.014
+              	c0,0-1.203-0.838-3.74-0.539c-3.724,0.45-6.235,3.155-6.235,6.121c0,2.977,2.512,4.933,6.235,4.482
+              	C35.982,38.535,39,35.76,39,32.792V6L16,13z"></path>
+            </svg>
+            Music
+          </dd>
+          <dd>
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve" class="icon">
+              <path fill="#F57C00" d="M40,41H8c-2.2,0-4-1.8-4-4V11c0-2.2,1.8-4,4-4h32c2.2,0,4,1.8,4,4v26C44,39.2,42.2,41,40,41z"></path>
+              <circle fill="#FFF9C4" cx="35" cy="16" r="3"></circle>
+              <polygon fill="#942A09" points="20,16 9,32 31,32 "></polygon>
+              <polygon fill="#BF360C" points="31,22 23,32 39,32 "></polygon>
+            </svg>
+            Pictures
+          </dd>
+          <dd>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve" class="icon">
+              <path fill="#3F51B5" d="M42,41V7L6,7v34H42z M12,18v4H8v-4H12z M12,26v4H8v-4H12z M12,34v4H8v-4H12z M12,10v4H8v-4H12z M40,18v4h-4
+              	v-4H40z M40,26v4h-4v-4H40z M40,34v4h-4v-4H40z M40,10v4h-4v-4H40z"></path>
+              <polygon fill="#FFFFFF" points="30,24 20,18 20,30 "></polygon>
+            </svg>
+            Videos
+          </dd>
+        </dl>
+      </nav>
+    </article>
+  </section>
+</body>
+</html>

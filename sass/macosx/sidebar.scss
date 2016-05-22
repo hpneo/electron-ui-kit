@@ -1,0 +1,37 @@
+.macosx {
+  .sidebar {
+    width: 192px;
+    font-size: 11px;
+    background: rgb(239, 241, 243);
+    padding: 6.5px 0;
+
+    dl {
+      margin: 0;
+      line-height: 26px;
+    }
+
+    dt {
+      color: #808080;
+      margin-left: 9px;
+      font-family: HelveticaNeue-Medium;
+      font-size: 10.5px;
+      letter-spacing: 0.35px;
+      line-height: 16px;
+    }
+
+    dd {
+      color: #4d4d4d;
+      margin-left: 18px;
+      letter-spacing: 0.4px;
+
+      .icon {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin-right: 6px;
+        color: #808080;
+        fill: #808080;
+      }
+    }
+  }
+}

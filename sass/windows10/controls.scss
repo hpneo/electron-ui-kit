@@ -1,0 +1,14 @@
+.windows10 {
+  progress {
+    -webkit-appearance: none;
+    height: 4px;
+
+    &::-webkit-progress-bar {
+      background: rgba(0, 0, 0, .2);
+    }
+
+    &::-webkit-progress-value {
+      background: #0078D7;
+    }
+  }
+}

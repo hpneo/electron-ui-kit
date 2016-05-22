@@ -1,0 +1,174 @@
+.macosx {
+  .toolbar {
+    min-height: 32px;
+    display: flex;
+
+    > * {
+      align-self: center;
+      margin-right: 6px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    button.toolbar-button {
+      background: #fcfbfc;
+      box-shadow: 0px 0.5px 0.5px 0px rgba(0,0,0,0.20), inset 0px 1px 0px 0px #ffffff;
+      border-radius: 4px;
+      height: 23px;
+      min-width: 30px;
+      color: #585858;
+      padding: 1px 10px;
+
+      &:active {
+        background-image: linear-gradient(-180deg, #e6e6e6 0%, #e4e3e4 50%, #dcdcdc 100%) !important;
+        box-shadow: 0px 0.5px 0.5px 0px rgba(0,0,0,0.20), inset 0px 1px 0px 0px #ffffff !important;
+        border: none;
+        color: #585858;
+
+        &::before {
+          content: none;
+        }
+      }
+
+      &.text-only {
+        background: #f6f6f6;
+        border: 1px solid #dbdbdb;
+        letter-spacing: 0.4px;
+      }
+
+      &[disabled] {
+        background: #f6f6f6;
+        border: 1px solid #dbdbdb;
+        color: #b0b0b0;
+        box-shadow: none;
+
+        .icon {
+          fill: #b0b0b0;
+          color: #b0b0b0;
+        }
+      }
+
+      &.dropdown-button {
+        background-image: url("../images/macosx/toolbar-button-arrow.png");
+        background-repeat: no-repeat;
+        background-position: calc(100% - 5px) center;
+        background-size: 8px auto;
+        padding-left: 5px;
+        padding-right: 18px;
+
+        &:active {
+          background-image: url("../images/macosx/toolbar-button-arrow.png"),
+                            linear-gradient(-180deg, #e6e6e6 0%, #e4e3e4 50%, #dcdcdc 100%) !important;
+          background-repeat: no-repeat, repeat;
+          background-position: calc(100% - 5px) center, 0 0;
+          background-size: 8px auto, 100% 100%;
+        }
+
+        .icon {
+          width: 14px;
+          height: 14px;
+        }
+      }
+    }
+
+    .segmented-control,
+    .grouped-buttons {
+      display: inline-block;
+      font-size: 0;
+      box-shadow: 0px 0.5px 0.5px 0px rgba(0,0,0,0.20);
+      border-radius: 3.5px;
+
+      > button {
+        display: inline-block;
+        min-width: 30px;
+        height: 23px;
+        margin: 0;
+        border-radius: 0;
+        background: #fcfbfc;
+        box-shadow: inset 0px 1px 0px 0px #ffffff;
+        margin-right: 1px;
+        padding: 1px 5px;
+        line-height: 0;
+
+        &:first-child {
+          border-top-left-radius: 3.5px;
+          border-bottom-left-radius: 3.5px;
+        }
+
+        &:last-child {
+          border-top-right-radius: 3.5px;
+          border-bottom-right-radius: 3.5px;
+          margin-right: 0;
+        }
+
+        &:active {
+          background: linear-gradient(-180deg, #e6e6e6 0%, #e4e3e4 50%, #dcdcdc 100%) !important;
+          box-shadow: 0px 0.5px 0.5px 0px rgba(0,0,0,0.20), inset 0px 1px 0px 0px #ffffff !important;
+          color: #585858;
+
+          &::before {
+            content: none;
+          }
+        }
+
+        &[disabled] {
+          background: #fcfbfc;
+          box-shadow: 0px 0.5px 0.5px 0px rgba(0,0,0,0.20), inset 0px 1px 0px 0px #ffffff !important;
+
+          .icon {
+            fill: #b1b1b1;
+            color: #b1b1b1;
+          }
+        }
+
+        &.selected {
+          background: #6e6c6e;
+          box-shadow: inset -1px 0px 0px 0px #646264;
+
+          .icon {
+            fill: #ffffff;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    .grouped-buttons {
+      display: inline-block;
+      font-size: 0;
+      box-shadow: none;
+
+      button {
+        display: inline-block;
+        min-width: 30px;
+        height: 22px;
+        border-radius: 3.5px;
+        background: #fcfbfc;
+        box-shadow: inset 0px 1px 0px 0px #ffffff,
+                    0px 0.5px 0.5px 0px rgba(0,0,0,0.20);
+        padding: 1px 5px;
+      }
+    }
+
+    input {
+      height: 23px;
+      background: #fcfbfc;
+      box-shadow: 0px 0.5px 0.5px 0px rgba(0,0,0,0.20), inset 0px 1px 0px 0px #ffffff;
+      border-radius: 4px;
+      color: #b2b2b2;
+      letter-spacing: 0.4px;
+      border: none;
+    }
+
+    select {
+      min-height: 19px;
+      background: #fcfbfc url("../images/macosx/toolbar-select-arrow.png") no-repeat calc(100% - 5px) center;
+      background-size: auto 12px;
+      box-shadow: 0px 0.5px 0.5px 0px rgba(0,0,0,0.20);
+      border-radius: 3px;
+      border: none;
+    }
+  }
+}

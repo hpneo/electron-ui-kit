@@ -1,0 +1,94 @@
+.macosx {
+  button,
+  input[type="reset"],
+  input[type="button"],
+  input[type="file"]::-webkit-file-upload-button,
+  input[type="file"].button-only::before {
+    min-width: 40px;
+    min-height: 20px;
+    border-radius: 3.5px;
+    background: #ffffff;
+    color: #262626;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.20), 0px 0px 0px 1px rgba(0,0,0,0.10);
+    font-size: 12px;
+    padding: 1px 15px;
+    font-family: "Helvetica Neue";
+
+    .icon {
+      fill: #585858;
+      color: #585858;
+      width: 12px;
+      height: 12px;
+      display: inline-block;
+    }
+  }
+
+  button.primary {
+    padding: 0 15px;
+    margin: 2px 0;
+    background-image: -webkit-linear-gradient(90deg, rgb(3,124,255) 0%, rgb(103,177,253) 100%);
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.20);
+    position: relative;
+    color: #ffffff;
+    transform-style: preserve-3d;
+    transform: translatez(1px);
+
+    &:before {
+      content: "";
+      transform: translatez(-1px);
+      border-radius: 3.5px;
+      background-image: -webkit-linear-gradient(270deg, rgb(71, 160, 252) 0%, rgb(0, 85, 255) 100%);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: -1px;
+      top: -1px;
+      padding: 1px;
+    }
+  }
+
+  button:active,
+  input[type="reset"]:active,
+  input[type="button"]:active,
+  input[type="file"]:active::-webkit-file-upload-button,
+  input[type="file"].button-only:active::before {
+    background-image: linear-gradient(-180deg, #69b2fd 0%, #007aff 100%);
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.20);
+    position: relative;
+    color: #ffffff;
+    border-color: transparent;
+    transform-style: preserve-3d;
+    transform: translatez(1px);
+  }
+
+  input[type="reset"]:active,
+  input[type="button"]:active,
+  input[type="file"]:active::-webkit-file-upload-button,
+  input[type="file"].button-only:active::before {
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.10), 0px 0px 0px 1px #69b2fd;
+  }
+
+  button:active::before {
+    content: "";
+    transform: translatez(-1px);
+    border-radius: 3.5px;
+    background-image: -webkit-linear-gradient(270deg, #47a0fc 0%, #0055ff 100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -1px;
+    top: -1px;
+    padding: 1px;
+    box-shadow: 0px 1px 0px 0px rgba(34, 31, 26, 0.12);
+  }
+
+  button[disabled],
+  input[type="reset"][disabled],
+  input[type="button"][disabled],
+  input[type="file"][disabled]::-webkit-file-upload-button,
+  input[type="file"].button-only[disabled]::before {
+    color: #a0a0a0;
+    background: #f6f6f6;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.10), 0px 0px 0px 1px rgba(0,0,0,0.05);
+  }
+}

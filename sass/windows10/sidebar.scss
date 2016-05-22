@@ -1,0 +1,49 @@
+.windows10 {
+  .sidebar {
+    width: 256px;
+    font-size: 15px;
+    background: #f2f2f2;
+    line-height: 48px;
+    overflow-x: hidden;
+
+    &.collapsed {
+      width: 48px;
+    }
+
+    dl {
+      width: 256px;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    dt {
+      width: 100%;
+      font-weight: bold;
+      text-transform: uppercase;
+      overflow-x: hidden;
+
+      &:active {
+        background: #dadada;
+      }
+    }
+
+    dd {
+      width: 100%;
+      margin: 0;
+      overflow-x: hidden;
+
+      &:active {
+        background: #dadada;
+      }
+    }
+
+    .icon {
+      width: 16px;
+      height: 16px;
+      box-sizing: content-box;
+      margin: 0 16px;
+      color: #171717;
+      fill: #171717;
+    }
+  }
+}

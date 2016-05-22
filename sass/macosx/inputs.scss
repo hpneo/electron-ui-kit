@@ -1,0 +1,304 @@
+.macosx {
+  input,
+  select {
+    font-family: "Helvetica Neue";
+    font-size: 12px;
+  }
+
+  input[type="datetime"],
+  input[type="email"],
+  input[type="number"],
+  input[type="password"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="search"],
+  input[type="url"],
+  textarea {
+    min-height: 21px;
+    background: #ffffff;
+    border: 1px solid #b1b1b1;
+    box-shadow: inset 0px 0px 0px 0.5px #f0f0f0;
+    padding-left: 5px;
+
+    &:focus {
+      background: #fcfbfc;
+      box-shadow: 0 0 0 3px #b1cff0;
+      border-radius: 1px;
+    }
+
+    &[disabled] {
+      background: #ffffff;
+      border: 1px solid #d0d0d0;
+      box-shadow: inset 0px 0px 0px 0.5px #f2f2f2;
+    }
+  }
+
+  input[type="datetime"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="search"],
+  input[type="url"] {
+    padding-right: 5px;
+  }
+
+  /* Checkboxes */
+
+  input[type="checkbox"] {
+    height: 13px;
+    width: 13px;
+    background: #ffffff;
+    border: 1px solid #bebebe;
+    box-shadow: inset 0px 0.5px 0.5px 0px rgba(0,0,0,0.20);
+    border-radius: 3.5px;
+
+    &:checked {
+      background: #3b99fc url("../images/macosx/tick.png") no-repeat center center;
+      background-size: 90% 90%;
+      box-shadow: none;
+      border: 1px solid #2c90fc;
+    }
+
+    &[disabled] {
+      background: #f6f6f6;
+      border: 1px solid #cccccc;
+      box-shadow: inset 0px 0.5px 1px 0px rgba(0,0,0,0.10);
+    }
+  }
+
+  /* Date & Time */
+
+  input[type="time"],
+  input[type="date"],
+  input[type="month"],
+  input[type="week"] {
+    border: none;
+    padding: 0;
+    margin: -3px;
+    overflow: visible;
+    max-height: 23px;
+    background: transparent;
+
+    &::-webkit-datetime-edit {
+      min-height: 21px;
+      background: #ffffff;
+      border: 1px solid #b1b1b1;
+      box-shadow: inset 0px 0px 0px 0.5px #f0f0f0;
+      line-height: 1.5;
+      margin: 3px;
+      padding-left: 5px;
+    }
+
+    &::-webkit-inner-spin-button {
+      opacity: 1;
+      font-size: 28px;
+      margin: 0;
+      visibility: visible;
+    }
+
+    &::-webkit-clear-button {
+      display: none;
+    }
+
+    &:focus::-webkit-datetime-edit {
+      background: #fcfbfc;
+      box-shadow: 0 0 0 3px #b1cff0;
+      border-radius: 1px;
+    }
+
+    &[disabled]::-webkit-datetime-edit {
+      background: #ffffff;
+      border: 1px solid #d0d0d0;
+      box-shadow: inset 0px 0px 0px 0.5px #f2f2f2;
+    }
+  }
+
+  /* file */
+
+  input[type="file"]::-webkit-file-upload-button,
+  input[type="file"].button-only::before {
+    margin: 1px;
+  }
+
+  input[type="file"].button-only {
+    overflow: hidden;
+
+    &::-webkit-file-upload-button {
+      display: none;
+    }
+
+    &::before {
+      content: "Select some files...";
+      display: inline-block;
+      -webkit-box-sizing: border-box;
+      vertical-align: middle;
+      line-height: 1.5;
+      font-family: "Helvetica Neue";
+      font-size: 12px;
+    }
+  }
+
+  /* Number */
+
+  input[type=number] {
+    position: relative;
+    margin-right: 20px;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      display: inline-block;
+      opacity: 1;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      pointer-events: all;
+      margin-left: 6px;
+      margin-top: -4px;
+      font-size: 28px;
+    }
+  }
+
+  /* Radio */
+
+  input[type="radio"] {
+    height: 15px;
+    width: 15px;
+    background: #ffffff;
+    border: 1px solid #bebebe;
+    box-shadow: inset 0px 0.5px 0.5px 0px rgba(0,0,0,0.20);
+    border-radius: 15px;
+
+    &:checked {
+      background: #3b99fc url("../images/macosx/radio-selected.png") no-repeat center center;
+      background-size: 60% 60%;
+      box-shadow: none;
+      border: 1px solid #2c90fc;
+    }
+
+    &[disabled] {
+      background: #f6f6f6;
+      border: 1px solid #cccccc;
+      box-shadow: inset 0px 0.5px 1px 0px rgba(0,0,0,0.10);
+    }
+  }
+
+  /* Search */
+
+  input[type="search"] {
+    -webkit-appearance: searchfield;
+    min-height: 22px;
+    background: #fcfbfc;
+    box-shadow: 0px 0.5px 0.5px 0px rgba(0,0,0,0.20), inset 0px 1px 0px 0px #ffffff;
+    border-radius: 4px;
+
+    &::-webkit-input-placeholder {
+      color: #b2b2b2;
+      font-family: "helvetica neue";
+      font-size: 12px;
+      text-align: center;
+      background: url("../images/macosx/icon-search.png") no-repeat left center;
+      background-size: contain;
+    }
+
+    &:focus {
+      background: #fcfbfc;
+      box-shadow: 0 0 0 3px #b1cff0;
+    }
+
+    &:focus::-webkit-input-placeholder {
+      text-align: left;
+      padding-left: 20px;
+    }
+
+    &[disabled] {
+      background: #f6f6f6;
+      border: 1px solid #dbdbdb;
+      box-shadow: none;
+    }
+
+    &[disabled]::-webkit-input-placeholder {
+      color: #dbdbdb;
+      background: url("../images/macosx/icon-search-disabled.png") no-repeat left center;
+      background-size: contain;
+    }
+  }
+
+  /* Select */
+
+  select {
+    -webkit-appearance: none;
+    min-width: 100px;
+    min-height: 21px;
+    line-height: 19px;
+    background: #ffffff url("../images/macosx/select-arrow.png") no-repeat right center;
+    background-size: auto 100%;
+    box-shadow: 0px 0.5px 0.5px 0px rgba(0,0,0,0.20);
+    border-radius: 3.5px;
+    border: 1px solid #c5c4c5;
+    padding-left: 5px;
+
+    &[disabled] {
+      background: #f2f2f2 url("../images/macosx/select-arrow-disabled.png") no-repeat calc(100% - 5px) center;
+      background-size: auto 12px;
+      box-shadow: 0px 0.5px 0.5px 0px rgba(0,0,0,0.20);
+      border-radius: 3.56px;
+    }
+  }
+
+  /* Range */
+
+  input[type="range"] {
+    &::-webkit-slider-runnable-track {
+      background: #b3b3b3;
+      border-radius: 6px;
+      height: 3px;
+    }
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 11px;
+      height: 11px;
+      background: #ffffff;
+      box-shadow: 0px 0px 0.5px 0.5px rgba(0,0,0,0.40);
+      border-radius: 11px;
+      outline: none;
+      margin-top: -4px;
+    }
+
+    &[min][max] {
+      position: relative;
+      --max: attr(max);
+    }
+
+    &[min][max]:before {
+      content: "";
+      background: linear-gradient(90deg, #c3c3c3 1.5px, rgba(238, 238, 238, 0) 1.5px) repeat-x 0 100% content-box;
+      background-size: calc(100% / (var(--max) - 1)) 4px;
+      background-size: calc(100% / 4) 4px;
+      width: calc(100% - 15px);
+      height: 4px;
+      display: block;
+      position: absolute;
+      top: -13px;
+      left: 7px;
+      box-sizing: border-box;
+    }
+
+    &[min][max]::-webkit-slider-thumb {
+      width: 15px;
+      height: 16.5px;
+      background: url("../images/macosx/slider-scrubber.png") no-repeat center center;
+      background-size: 15px auto;
+      box-shadow: none;
+      border-radius: 0;
+      margin-top: -10px;
+    }
+
+    &[disabled] {
+      opacity: 0.7;
+    }
+  }
+}

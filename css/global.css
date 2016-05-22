@@ -1,0 +1,31 @@
+* {
+  -webkit-box-sizing: border-box;
+  vertical-align: middle;
+}
+
+h1, h2 {
+  font-weight: lighter;
+}
+
+input, select {
+  outline: none;
+}
+
+button,
+input[type="file"]::-webkit-file-upload-button,
+input[type="checkbox"],
+input[type="radio"],
+input[type="reset"],
+input[type="button"],
+input[type="range"] {
+  -webkit-appearance: none;
+  border: none;
+}
+
+button,
+input[type="file"]::-webkit-file-upload-button,
+input[type="reset"],
+input[type="button"],
+input[type="range"] {
+  outline: none;
+}

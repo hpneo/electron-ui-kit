@@ -1,0 +1,11 @@
+.elementaryos {
+  font-family: "Open Sans";
+  background: #d5d5d5;
+  padding: 12px;
+}
+
+@import "buttons";
+@import "inputs";
+@import "toolbar";
+@import "controls";
+@import "sidebar";

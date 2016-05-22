@@ -1,0 +1,244 @@
+.elementaryos {
+  /* Inputs */
+
+  input,
+  select {
+    font-family: "Open Sans";
+    font-size: 12px;
+    outline: none;
+  }
+
+  input[type="date"],
+  input[type="datetime"],
+  input[type="month"],
+  input[type="week"],
+  input[type="time"],
+  input[type="email"],
+  input[type="number"],
+  input[type="password"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="search"],
+  input[type="url"],
+  textarea {
+    min-height: 23px;
+    background: #ffffff;
+    box-shadow: inset 0 1.5px 0 0 rgb(224, 224, 224), inset 0 -1px 0 0 rgba(224, 224, 224, .2), inset 1px 0 0 rgba(224, 224, 224, .2), inset -1px 0 0 rgba(224, 224, 224, .2);
+    border: 1px solid #a0a0a0;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 1px;
+    border-radius: 3px;
+
+    &:focus {
+      border-color: #3d9bda;
+    }
+
+    &[disabled] {
+      border-color: rgb(199, 199, 199);
+      color: rgb(156, 156, 156);
+      box-shadow: none;
+    }
+  }
+
+  textarea {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  /* Checkboxes */
+
+  input[type="checkbox"] {
+    height: 15px;
+    width: 15px;
+    box-shadow: none;
+    background: #f6f6f6;
+    border: 1px solid #b9b9b9;
+    border-radius: 2px;
+
+    &:checked {
+      background: #45A5E9 url("../images/elementaryos/tick.png") no-repeat center center;
+      background-size: contain;
+      border-color: #3A8BC5;
+    }
+
+    &[disabled] {
+      border-color: rgb(199, 199, 199);
+      background: #fafafa;
+    }
+  }
+
+  /* Switch */
+
+  input[type="checkbox"].switch {
+    height: 23px;
+    width: 46px;
+    background: #f6f6f6 url("../images/elementaryos/dot.png") no-repeat left center;
+    background-size: contain;
+    border: 1px solid #b9b9b9;
+    border-radius: 23px;
+
+    &.switch:checked {
+      background: url("../images/elementaryos/dot.png") no-repeat right center,
+                  url("../images/elementaryos/tick.png") no-repeat 8px center,
+                  #45A5E9;
+      background-size: contain, 11px auto;
+      border-color: #3A8BC5;
+    }
+
+    &.switch[disabled] {
+      background: #ffffff url("../images/elementaryos/dot.png") no-repeat left center;
+      background-size: contain;
+      opacity: 0.8;
+      border-color: rgb(199, 199, 199);
+    }
+  }
+
+  /* Date & Time */
+
+  input[type="time"],
+  input[type="date"],
+  input[type="month"],
+  input[type="week"] {
+    padding-right: 0;
+  }
+
+  /* Color */
+
+  input[type="color"]::-webkit-color-swatch {
+    border: none;
+  }
+
+  /* File */
+
+  input[type="file"].button-only {
+    overflow: hidden;
+
+    &::-webkit-file-upload-button {
+      display: none;
+    }
+
+    &::before {
+      content: "Select some files...";
+      display: inline-block;
+      -webkit-box-sizing: border-box;
+      vertical-align: middle;
+      line-height: 23px;
+      font-family: "Open Sans";
+      font-size: 12px;
+    }
+  }
+
+  /* Number */
+
+  input[type="number"] {
+    padding-right: 0;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      opacity: 1;
+      display: inline-block;
+      width: 21px;
+      height: 21px;
+      line-height: 21px;
+      padding: 0;
+    }
+  }
+
+  /* Radio */
+
+  input[type="radio"] {
+    height: 15px;
+    width: 15px;
+    box-shadow: none;
+    background: #f6f6f6;
+    border: 1px solid #b9b9b9;
+    border-radius: 15px;
+
+    &:checked {
+      background: #45A5E9 url("../images/elementaryos/tick.png") no-repeat center center;
+      background-size: 90% auto;
+      border-color: #3A8BC5;
+    }
+
+    &[disabled] {
+      border-color: rgb(199, 199, 199);
+      background: #fafafa;
+    }
+  }
+
+  /* Search */
+
+  input[type="search"] {
+    padding-left: 20px;
+    background: #ffffff url("../images/elementaryos/icon-search.png") no-repeat 6px center;
+    background-size: 14px auto;
+
+    &::-webkit-input-placeholder {
+      font-style: italic;
+    }
+  }
+
+  /* Select */
+
+  select {
+    -webkit-appearance: none;
+    min-width: 100px;
+    min-height: 23px;
+    padding: 0 6px;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.4);
+
+    background: rgb(245, 245, 245);
+    background-image: url("../images/elementaryos/select-arrow.png"),
+                      linear-gradient(to bottom,
+                        transparent,
+                        transparent 50%,
+                        rgba(0, 0, 0, 0.104)
+                      );
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center, 0 0, 0 0;
+    background-size: 8px auto, 100% 100%, 100% 100%;
+    border: 1px solid #a0a0a0;
+    border-radius: 3px;
+    color: #333333;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.15);
+
+    &:focus {
+      border-color: #3d9bda;
+    }
+
+    &[disabled] {
+      color: rgb(156, 156, 156);
+      border: solid 1px rgb(199, 199, 199);
+      background: rgb(245, 245, 245);
+      background-image: url("../images/elementaryos/select-arrow.png");
+      background-repeat: no-repeat;
+      background-position: calc(100% - 10px) center;
+      background-size: 8px auto;
+      opacity: 0.8;
+    }
+  }
+
+  /* Range */
+
+  input[type="range"] {
+    &::-webkit-slider-runnable-track {
+      background: #ffffff;
+      border-radius: 6px;
+      height: 3px;
+      box-shadow: inset 0 1.5px 0 0 rgba(224, 224, 224, .4), inset 0 -1px 0 0 rgba(224, 224, 224, .2), inset 1px 0 0 rgba(224, 224, 224, .2), inset -1px 0 0 rgba(224, 224, 224, .2);
+      border: 1px solid rgba(0, 0, 0, 0.22);
+    }
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 11px;
+      height: 11px;
+      background: #ffffff;
+      box-shadow: 0px 0px 0.5px 0.5px rgba(0,0,0,0.40);
+      border-radius: 11px;
+      outline: none;
+      margin-top: -4px;
+    }
+  }
+}

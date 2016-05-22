@@ -1,0 +1,68 @@
+.elementaryos {
+  button,
+  input[type="reset"],
+  input[type="button"],
+  input[type="color"],
+  input[type="file"]::-webkit-file-upload-button,
+  input[type="file"].button-only::before {
+    min-height: 25px;
+    font-size: 12px;
+    padding: 0 6px;
+    font-family: "Open Sans";
+    text-shadow: 0 0.5px rgba(255, 255, 255, 0.4);
+
+    background-color: rgb(245, 245, 245);
+    // background-image: linear-gradient(to bottom,
+    //                               transparent,
+    //                               transparent 50%,
+    //                               rgba(0, 0, 0, 0.04)
+    //                               );
+    background-image: linear-gradient(to bottom, #ffffff 10%, #dadada);
+
+    border: 1px solid #a0a0a0;
+    border-radius: 3px;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+                inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+                inset 0 -1px 0 0 rgba(255, 255, 255, 0.45),
+                0 1px 0 0 rgba(255, 255, 255, 0.15);
+    color: #333333;
+    transition: all 10ms ease-in;
+  }
+
+  button.primary {
+    border: solid 1px rgb(56,128,164);
+    color: #ffffff;
+    background-image: linear-gradient(to bottom, #5dbced 0%, #45a5e9 100%);
+
+    &:active {
+      border: solid 1px rgb(56,128,164);
+      background-image: linear-gradient(to top, #5dbced 0%, #45a5e9 100%);
+    }
+  }
+
+  button:active,
+  input[type="reset"]:active,
+  input[type="button"]:active,
+  input[type="file"]:active::-webkit-file-upload-button,
+  input[type="file"].button-only:active::before {
+    /*border: solid 1px rgb(124, 124, 124);
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, .4);
+    background-image: -webkit-linear-gradient(top, rgb(192, 192, 192) 0%, rgb(209, 209, 209) 100%);*/
+    background-color: rgba(0, 0, 0, 0.05);
+    background-image: none;
+    border-color: rgba(0, 0, 0, 0.25);
+
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05),
+                0 1px 0 0 rgba(255, 255, 255, 0.30);
+  }
+
+  button[disabled],
+  input[type="reset"][disabled],
+  input[type="button"][disabled],
+  input[type="file"][disabled]::-webkit-file-upload-button,
+  input[type="file"].button-only[disabled]::before {
+    color: rgb(156, 156, 156);
+    border: solid 1px rgb(199, 199, 199);
+    background: rgb(245, 245, 245);
+  }
+}

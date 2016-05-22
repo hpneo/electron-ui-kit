@@ -1,0 +1,19 @@
+.macosx {
+  progress {
+    -webkit-appearance: none;
+    height: 3px;
+    border-radius: 3px;
+    overflow: hidden;
+
+    &::-webkit-progress-bar {
+      border-radius: 3px;
+      background: #b3b3b3;
+    }
+
+    &::-webkit-progress-value {
+      background-image: linear-gradient(90deg, #3995f4 0%, #70b7ff 50%, #3b98fa 100%);
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+    }
+  }
+}

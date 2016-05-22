@@ -1,0 +1,56 @@
+.windows10 {
+  /* Buttons */
+
+  button,
+  input[type="reset"],
+  input[type="button"],
+  input[type="file"]::-webkit-file-upload-button,
+  input[type="file"].button-only::before {
+    min-width: 40px;
+    min-height: 32px;
+    background: #c1c1c1;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: "Segoe UI";
+    padding: 0 11px;
+  }
+
+  button,
+  input[type="reset"],
+  input[type="button"] {
+    .icon {
+      display: inline-block;
+      fill: #000100;
+      color: #000100;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  button.primary {
+    background: #0078d7;
+    color: #ffffff;
+  }
+
+  button:active,
+  input[type="reset"]:active,
+  input[type="button"]:active,
+  input[type="file"]:active::-webkit-file-upload-button,
+  input[type="file"].button-only:active::before {
+    background: #0063b1;
+    color: #ffffff;
+  }
+
+  button[disabled],
+  input[type="reset"][disabled],
+  input[type="button"][disabled],
+  input[type="file"][disabled]::-webkit-file-upload-button,
+  input[type="file"].button-only[disabled]::before {
+    background: #f2f2f2;
+
+    .icon {
+      color: graytext;
+      fill: graytext;
+    }
+  }
+}

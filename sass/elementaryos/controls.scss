@@ -1,0 +1,17 @@
+.elementaryos {
+  progress {
+    -webkit-appearance: none;
+    height: 10px;
+
+    &::-webkit-progress-bar {
+      background: #ffffff;
+      box-shadow: inset 0 1.5px 0 0 rgba(224, 224, 224, .4), inset 0 -1px 0 0 rgba(224, 224, 224, .2), inset 1px 0 0 rgba(224, 224, 224, .2), inset -1px 0 0 rgba(224, 224, 224, .2);
+      border: 1px solid rgba(0, 0, 0, 0.22);
+    }
+
+    &::-webkit-progress-value {
+      background-image: linear-gradient(to bottom, #5dbced 0%, #45a5e9 100%);
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05), inset 0 1px 0 0 rgba(255, 255, 255, 0.45), inset 0 -1px 0 0 rgba(255, 255, 255, 0.15), 0 1px 0 0 rgba(255, 255, 255, 0.15);
+    }
+  }
+}

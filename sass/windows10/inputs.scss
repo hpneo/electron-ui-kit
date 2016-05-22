@@ -1,0 +1,288 @@
+.windows10 {
+  /* Inputs */
+
+  input,
+  select {
+    font-family: "Segoe UI";
+    font-size: 15px;
+    border-radius: 0;
+  }
+
+  input[type="date"],
+  input[type="datetime"],
+  input[type="month"],
+  input[type="week"],
+  input[type="time"],
+  input[type="email"],
+  input[type="number"],
+  input[type="password"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="search"],
+  input[type="url"],
+  select,
+  textarea {
+    min-height: 32px;
+    background: #ffffff;
+    border: 2px solid rgba(0, 0, 0, .20);
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &:focus {
+      border-color: #3176BB;
+    }
+
+    &[disabled] {
+      border-color: #f2f2f2;
+    }
+  }
+
+  /* Checkboxes */
+
+  input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+    background: #ffffff;
+    box-shadow: none;
+    border: 2px solid rgba(0, 0, 0, .8);
+
+    &:checked {
+      background: #0078D7 url("../images/windows10/tick.png") no-repeat center center;
+      background-size: 15px auto;
+      border-color: #0078D7;
+    }
+
+    &[disabled] {
+      border-color: #f2f2f2;
+    }
+  }
+
+  /* Switch */
+
+  input[type="checkbox"].switch {
+    height: 20px;
+    width: 40px;
+    background: url("../images/windows10/switch-dot-off.png") no-repeat 3px center;
+    background-size: 10.3px auto;
+    border: 2px solid rgba(0, 0, 0, .8);
+    border-radius: 20px;
+
+    &:checked {
+      background: #0078D7 url("../images/windows10/switch-dot-on.png") no-repeat calc(100% - 3px) center;
+      background-size: 10.3px auto;
+      border-color: #0078D7;
+    }
+
+    &[disabled] {
+      background: url("../images/windows10/switch-dot-off.png") no-repeat 3px center;
+      background-size: 10.3px auto;
+      opacity: 0.8;
+      border-color: rgb(199, 199, 199);
+    }
+  }
+
+  /* Date & Time */
+
+  input[type="time"],
+  input[type="date"],
+  input[type="month"],
+  input[type="week"] {
+    padding-right: 0;
+  }
+
+  input[type="time"] {
+    padding: 0;
+    min-width: 285px;
+
+    &::-webkit-datetime-edit-fields-wrapper {
+      padding: 0;
+    }
+
+    &::-webkit-datetime-edit-fields-wrapper,
+    &::-webkit-datetime-edit-hour-field,
+    &::-webkit-datetime-edit-minute-field,
+    &::-webkit-datetime-edit-ampm-field,
+    &::-webkit-datetime-edit-text,
+    &::-webkit-inner-spin-button {
+      display: inline-block;
+      height: 28px;
+      line-height: 28px;
+      padding: 0;
+    }
+
+    &::-webkit-datetime-edit-hour-field,
+    &::-webkit-datetime-edit-minute-field,
+    &::-webkit-datetime-edit-ampm-field {
+      min-width: 80px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    &::-webkit-datetime-edit-text {
+      background: rgba(0, 0, 0, .20);
+      color: transparent;
+      width: 2px;
+    }
+
+    &[disabled]::-webkit-datetime-edit-text {
+      background: #f2f2f2;
+      color: transparent;
+      width: 2px;
+    }
+  }
+
+  /* Color */
+
+  input[type="color"] {
+    -webkit-appearance: none;
+    border: none;
+    width: 60px;
+    height: 60px;
+    background: none;
+    padding: 0;
+
+    &::-webkit-color-swatch-wrapper {
+      padding: 0;
+    }
+
+    &::-webkit-color-swatch {
+      border: none;
+    }
+  }
+
+  /* Date & Time */
+
+  input[type="date"]::-webkit-calendar-picker-indicator,
+  input[type="month"]::-webkit-calendar-picker-indicator,
+  input[type="week"]::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    background: url("../images/windows10/date-calendar.png") no-repeat center center;
+    background-size: 90% auto;
+    color: transparent;
+    margin-right: 6px;
+  }
+
+  input[type="month"]::-webkit-clear-button,
+  input[type="time"]::-webkit-clear-button,
+  input[type="week"]::-webkit-clear-button {
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+    opacity: 1;
+    background: url("../images/windows10/cancel.png") no-repeat center center;
+    background-size: 90% auto;
+    color: transparent;
+    margin-right: 6px;
+  }
+
+  /* File */
+
+  input[type="file"].button-only {
+    overflow: hidden;
+
+    &::-webkit-file-upload-button {
+      display: none;
+    }
+
+    &::before {
+      content: "Select some files...";
+      display: inline-block;
+      -webkit-box-sizing: border-box;
+      vertical-align: middle;
+      line-height: 32px;
+      font-family: "Segoe UI";
+      font-size: 15px;
+    }
+  }
+
+  /* Number */
+
+  input[type="number"] {
+    padding-right: 0;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      opacity: 1;
+      display: inline-block;
+      height: 28px;
+      line-height: 28px;
+      padding: 0;
+    }
+  }
+
+  /* Radio */
+
+  input[type="radio"] {
+    height: 20px;
+    width: 20px;
+    background: #ffffff;
+    box-shadow: none;
+    border: 2px solid rgba(0, 0, 0, .8);
+    border-radius: 20px;
+
+    &:checked {
+      background: #ffffff url("../images/windows10/dot.png") no-repeat center center;
+      background-size: 10px auto;
+      border-color: #0078D7;
+    }
+
+    &[disabled] {
+      border-color: #f2f2f2;
+    }
+  }
+
+  /* Search */
+
+  input[type="search"] {
+    &::-webkit-search-cancel-button {
+      -webkit-appearance: none;
+      width: 14px;
+      height: 14px;
+      opacity: 1;
+      background: url("../images/windows10/cancel.png") no-repeat center center;
+      background-size: 90% auto;
+      color: transparent;
+      margin-right: 0 !important;
+    }
+
+    &::-webkit-input-placeholder {
+      -webkit-appearance: none;
+      background: url("../images/windows10/icon-search.png") no-repeat right center;
+      background-size: 12px 12px;
+      margin-right: 0 !important;
+    }
+
+    &::-webkit-search-cancel-button {
+      flex: 0;
+    }
+  }
+
+  /* Select */
+
+  select {
+    -webkit-appearance: none;
+    min-width: 100px;
+    background: url("../images/windows10/select-arrow.png") no-repeat calc(100% - 10px) center;
+    background-size: 12px auto;
+  }
+
+  /* Range */
+
+  input[type="range"] {
+    &::-webkit-slider-runnable-track {
+      background: rgba(0, 0, 0, .4);
+      border-radius: 6px;
+      height: 2px;
+    }
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 8px;
+      height: 24px;
+      background: #0078D7;
+      border-radius: 11px;
+      outline: none;
+      margin-top: -12px;
+    }
+  }
+}

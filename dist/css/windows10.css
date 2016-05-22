@@ -1,0 +1,327 @@
+.windows10 {
+  font-family: "Segoe UI"; }
+
+.windows10 {
+  /* Buttons */ }
+  .windows10 button,
+  .windows10 input[type="reset"],
+  .windows10 input[type="button"],
+  .windows10 input[type="file"]::-webkit-file-upload-button,
+  .windows10 input[type="file"].button-only::before {
+    min-width: 40px;
+    min-height: 32px;
+    background: #c1c1c1;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: "Segoe UI";
+    padding: 0 11px; }
+  .windows10 button .icon,
+  .windows10 input[type="reset"] .icon,
+  .windows10 input[type="button"] .icon {
+    display: inline-block;
+    fill: #000100;
+    color: #000100;
+    width: 20px;
+    height: 20px; }
+  .windows10 button.primary {
+    background: #0078d7;
+    color: #ffffff; }
+  .windows10 button:active,
+  .windows10 input[type="reset"]:active,
+  .windows10 input[type="button"]:active,
+  .windows10 input[type="file"]:active::-webkit-file-upload-button,
+  .windows10 input[type="file"].button-only:active::before {
+    background: #0063b1;
+    color: #ffffff; }
+  .windows10 button[disabled],
+  .windows10 input[type="reset"][disabled],
+  .windows10 input[type="button"][disabled],
+  .windows10 input[type="file"][disabled]::-webkit-file-upload-button,
+  .windows10 input[type="file"].button-only[disabled]::before {
+    background: #f2f2f2; }
+    .windows10 button[disabled] .icon,
+    .windows10 input[type="reset"][disabled] .icon,
+    .windows10 input[type="button"][disabled] .icon,
+    .windows10 input[type="file"][disabled]::-webkit-file-upload-button .icon,
+    .windows10 input[type="file"].button-only[disabled]::before .icon {
+      color: graytext;
+      fill: graytext; }
+
+.windows10 {
+  /* Inputs */
+  /* Checkboxes */
+  /* Switch */
+  /* Date & Time */
+  /* Color */
+  /* Date & Time */
+  /* File */
+  /* Number */
+  /* Radio */
+  /* Search */
+  /* Select */
+  /* Range */ }
+  .windows10 input,
+  .windows10 select {
+    font-family: "Segoe UI";
+    font-size: 15px;
+    border-radius: 0; }
+  .windows10 input[type="date"],
+  .windows10 input[type="datetime"],
+  .windows10 input[type="month"],
+  .windows10 input[type="week"],
+  .windows10 input[type="time"],
+  .windows10 input[type="email"],
+  .windows10 input[type="number"],
+  .windows10 input[type="password"],
+  .windows10 input[type="tel"],
+  .windows10 input[type="text"],
+  .windows10 input[type="search"],
+  .windows10 input[type="url"],
+  .windows10 select,
+  .windows10 textarea {
+    min-height: 32px;
+    background: #ffffff;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    padding-left: 10px;
+    padding-right: 10px; }
+    .windows10 input[type="date"]:focus,
+    .windows10 input[type="datetime"]:focus,
+    .windows10 input[type="month"]:focus,
+    .windows10 input[type="week"]:focus,
+    .windows10 input[type="time"]:focus,
+    .windows10 input[type="email"]:focus,
+    .windows10 input[type="number"]:focus,
+    .windows10 input[type="password"]:focus,
+    .windows10 input[type="tel"]:focus,
+    .windows10 input[type="text"]:focus,
+    .windows10 input[type="search"]:focus,
+    .windows10 input[type="url"]:focus,
+    .windows10 select:focus,
+    .windows10 textarea:focus {
+      border-color: #3176BB; }
+    .windows10 input[type="date"][disabled],
+    .windows10 input[type="datetime"][disabled],
+    .windows10 input[type="month"][disabled],
+    .windows10 input[type="week"][disabled],
+    .windows10 input[type="time"][disabled],
+    .windows10 input[type="email"][disabled],
+    .windows10 input[type="number"][disabled],
+    .windows10 input[type="password"][disabled],
+    .windows10 input[type="tel"][disabled],
+    .windows10 input[type="text"][disabled],
+    .windows10 input[type="search"][disabled],
+    .windows10 input[type="url"][disabled],
+    .windows10 select[disabled],
+    .windows10 textarea[disabled] {
+      border-color: #f2f2f2; }
+  .windows10 input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+    background: #ffffff;
+    box-shadow: none;
+    border: 2px solid rgba(0, 0, 0, 0.8); }
+    .windows10 input[type="checkbox"]:checked {
+      background: #0078D7 url("../images/windows10/tick.png") no-repeat center center;
+      background-size: 15px auto;
+      border-color: #0078D7; }
+    .windows10 input[type="checkbox"][disabled] {
+      border-color: #f2f2f2; }
+  .windows10 input[type="checkbox"].switch {
+    height: 20px;
+    width: 40px;
+    background: url("../images/windows10/switch-dot-off.png") no-repeat 3px center;
+    background-size: 10.3px auto;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    border-radius: 20px; }
+    .windows10 input[type="checkbox"].switch:checked {
+      background: #0078D7 url("../images/windows10/switch-dot-on.png") no-repeat calc(100% - 3px) center;
+      background-size: 10.3px auto;
+      border-color: #0078D7; }
+    .windows10 input[type="checkbox"].switch[disabled] {
+      background: url("../images/windows10/switch-dot-off.png") no-repeat 3px center;
+      background-size: 10.3px auto;
+      opacity: 0.8;
+      border-color: #c7c7c7; }
+  .windows10 input[type="time"],
+  .windows10 input[type="date"],
+  .windows10 input[type="month"],
+  .windows10 input[type="week"] {
+    padding-right: 0; }
+  .windows10 input[type="time"] {
+    padding: 0;
+    min-width: 285px; }
+    .windows10 input[type="time"]::-webkit-datetime-edit-fields-wrapper {
+      padding: 0; }
+    .windows10 input[type="time"]::-webkit-datetime-edit-fields-wrapper, .windows10 input[type="time"]::-webkit-datetime-edit-hour-field, .windows10 input[type="time"]::-webkit-datetime-edit-minute-field, .windows10 input[type="time"]::-webkit-datetime-edit-ampm-field, .windows10 input[type="time"]::-webkit-datetime-edit-text, .windows10 input[type="time"]::-webkit-inner-spin-button {
+      display: inline-block;
+      height: 28px;
+      line-height: 28px;
+      padding: 0; }
+    .windows10 input[type="time"]::-webkit-datetime-edit-hour-field, .windows10 input[type="time"]::-webkit-datetime-edit-minute-field, .windows10 input[type="time"]::-webkit-datetime-edit-ampm-field {
+      min-width: 80px;
+      text-align: center;
+      text-transform: uppercase; }
+    .windows10 input[type="time"]::-webkit-datetime-edit-text {
+      background: rgba(0, 0, 0, 0.2);
+      color: transparent;
+      width: 2px; }
+    .windows10 input[type="time"][disabled]::-webkit-datetime-edit-text {
+      background: #f2f2f2;
+      color: transparent;
+      width: 2px; }
+  .windows10 input[type="color"] {
+    -webkit-appearance: none;
+    border: none;
+    width: 60px;
+    height: 60px;
+    background: none;
+    padding: 0; }
+    .windows10 input[type="color"]::-webkit-color-swatch-wrapper {
+      padding: 0; }
+    .windows10 input[type="color"]::-webkit-color-swatch {
+      border: none; }
+  .windows10 input[type="date"]::-webkit-calendar-picker-indicator,
+  .windows10 input[type="month"]::-webkit-calendar-picker-indicator,
+  .windows10 input[type="week"]::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    background: url("../images/windows10/date-calendar.png") no-repeat center center;
+    background-size: 90% auto;
+    color: transparent;
+    margin-right: 6px; }
+  .windows10 input[type="month"]::-webkit-clear-button,
+  .windows10 input[type="time"]::-webkit-clear-button,
+  .windows10 input[type="week"]::-webkit-clear-button {
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+    opacity: 1;
+    background: url("../images/windows10/cancel.png") no-repeat center center;
+    background-size: 90% auto;
+    color: transparent;
+    margin-right: 6px; }
+  .windows10 input[type="file"].button-only {
+    overflow: hidden; }
+    .windows10 input[type="file"].button-only::-webkit-file-upload-button {
+      display: none; }
+    .windows10 input[type="file"].button-only::before {
+      content: "Select some files...";
+      display: inline-block;
+      -webkit-box-sizing: border-box;
+      vertical-align: middle;
+      line-height: 32px;
+      font-family: "Segoe UI";
+      font-size: 15px; }
+  .windows10 input[type="number"] {
+    padding-right: 0; }
+    .windows10 input[type="number"]::-webkit-inner-spin-button, .windows10 input[type="number"]::-webkit-outer-spin-button {
+      opacity: 1;
+      display: inline-block;
+      height: 28px;
+      line-height: 28px;
+      padding: 0; }
+  .windows10 input[type="radio"] {
+    height: 20px;
+    width: 20px;
+    background: #ffffff;
+    box-shadow: none;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    border-radius: 20px; }
+    .windows10 input[type="radio"]:checked {
+      background: #ffffff url("../images/windows10/dot.png") no-repeat center center;
+      background-size: 10px auto;
+      border-color: #0078D7; }
+    .windows10 input[type="radio"][disabled] {
+      border-color: #f2f2f2; }
+  .windows10 input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+    opacity: 1;
+    background: url("../images/windows10/cancel.png") no-repeat center center;
+    background-size: 90% auto;
+    color: transparent;
+    margin-right: 0 !important; }
+  .windows10 input[type="search"]::-webkit-input-placeholder {
+    -webkit-appearance: none;
+    background: url("../images/windows10/icon-search.png") no-repeat right center;
+    background-size: 12px 12px;
+    margin-right: 0 !important; }
+  .windows10 input[type="search"]::-webkit-search-cancel-button {
+    flex: 0; }
+  .windows10 select {
+    -webkit-appearance: none;
+    min-width: 100px;
+    background: url("../images/windows10/select-arrow.png") no-repeat calc(100% - 10px) center;
+    background-size: 12px auto; }
+  .windows10 input[type="range"]::-webkit-slider-runnable-track {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    height: 2px; }
+  .windows10 input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 8px;
+    height: 24px;
+    background: #0078D7;
+    border-radius: 11px;
+    outline: none;
+    margin-top: -12px; }
+
+.windows10 .toolbar {
+  min-height: 48px;
+  background: #f2f2f2; }
+  .windows10 .toolbar button {
+    background: none;
+    min-width: 68px;
+    min-height: 48px; }
+    .windows10 .toolbar button:active {
+      background: #dadada;
+      color: inherit; }
+    .windows10 .toolbar button.dropdown-button {
+      background-image: url("../images/windows10/select-arrow.png");
+      background-repeat: no-repeat;
+      background-position: calc(100% - 5px) center;
+      background-size: 12.5px auto; }
+  .windows10 .toolbar .segmented-control > button,
+  .windows10 .toolbar .grouped-buttons > button {
+    min-width: 48px; }
+
+.windows10 progress {
+  -webkit-appearance: none;
+  height: 4px; }
+  .windows10 progress::-webkit-progress-bar {
+    background: rgba(0, 0, 0, 0.2); }
+  .windows10 progress::-webkit-progress-value {
+    background: #0078D7; }
+
+.windows10 .sidebar {
+  width: 256px;
+  font-size: 15px;
+  background: #f2f2f2;
+  line-height: 48px;
+  overflow-x: hidden; }
+  .windows10 .sidebar.collapsed {
+    width: 48px; }
+  .windows10 .sidebar dl {
+    width: 256px;
+    margin: 0;
+    overflow-x: hidden; }
+  .windows10 .sidebar dt {
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    overflow-x: hidden; }
+    .windows10 .sidebar dt:active {
+      background: #dadada; }
+  .windows10 .sidebar dd {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden; }
+    .windows10 .sidebar dd:active {
+      background: #dadada; }
+  .windows10 .sidebar .icon {
+    width: 16px;
+    height: 16px;
+    box-sizing: content-box;
+    margin: 0 16px;
+    color: #171717;
+    fill: #171717; }
