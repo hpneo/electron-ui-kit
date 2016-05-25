@@ -1,10 +1,10 @@
-.windows10 {
-  /* Inputs */
+@import "variables";
 
+.windows10 {
   input,
   select {
     font-family: "Segoe UI";
-    font-size: 15px;
+    font-size: $font-size;
     border-radius: 0;
   }
 
@@ -191,7 +191,7 @@
       vertical-align: middle;
       line-height: 32px;
       font-family: "Segoe UI";
-      font-size: 15px;
+      font-size: $font-size;
     }
   }
 

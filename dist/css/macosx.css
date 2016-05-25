@@ -1,8 +1,19 @@
 .macosx {
+  -webkit-font-smoothing: antialiased;
   font-family: "Helvetica Neue";
-  font-size: 12px;
+  font-size: 13px;
   background: #ececec;
   padding: 10px; }
+  .macosx h1 {
+    font-size: 46px;
+    line-height: 1.0625;
+    font-weight: 100;
+    letter-spacing: -0.02em; }
+  .macosx h2 {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 100;
+    letter-spacing: -0.008em; }
 
 .macosx button,
 .macosx input[type="reset"],
@@ -15,7 +26,7 @@
   background: #ffffff;
   color: #262626;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
-  font-size: 12px;
+  font-size: 13px;
   padding: 1px 15px;
   font-family: "Helvetica Neue"; }
   .macosx button .icon,
@@ -103,7 +114,7 @@
   .macosx input,
   .macosx select {
     font-family: "Helvetica Neue";
-    font-size: 12px; }
+    font-size: 13px; }
   .macosx input[type="datetime"],
   .macosx input[type="email"],
   .macosx input[type="number"],
@@ -228,7 +239,7 @@
       vertical-align: middle;
       line-height: 1.5;
       font-family: "Helvetica Neue";
-      font-size: 12px; }
+      font-size: 13px; }
   .macosx input[type=number] {
     position: relative;
     margin-right: 20px; }
@@ -269,7 +280,7 @@
     .macosx input[type="search"]::-webkit-input-placeholder {
       color: #b2b2b2;
       font-family: "helvetica neue";
-      font-size: 12px;
+      font-size: 13px;
       text-align: center;
       background: url("../images/macosx/icon-search.png") no-repeat left center;
       background-size: contain; }

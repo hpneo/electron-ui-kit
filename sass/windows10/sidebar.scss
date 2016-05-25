@@ -1,7 +1,9 @@
+@import "variables";
+
 .windows10 {
   .sidebar {
     width: 256px;
-    font-size: 15px;
+    font-size: $font-size;
     background: #f2f2f2;
     line-height: 48px;
     overflow-x: hidden;

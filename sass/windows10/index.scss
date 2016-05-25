@@ -1,5 +1,28 @@
+@import "variables";
+
 .windows10 {
   font-family: "Segoe UI";
+  font-size: $font-size;
+
+  h1 {
+    font-size: 46px;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 15px;
+  }
 }
 
 @import "buttons";

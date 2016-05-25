@@ -1,54 +1,66 @@
 .windows10 {
-  font-family: "Segoe UI"; }
+  font-family: "Segoe UI";
+  font-size: 15px; }
+  .windows10 h1 {
+    font-size: 46px; }
+  .windows10 h2 {
+    font-size: 34px; }
+  .windows10 h3 {
+    font-size: 24px; }
+  .windows10 h4 {
+    font-size: 20px; }
+  .windows10 h5 {
+    font-size: 15px; }
+
+.windows10 button,
+.windows10 input[type="reset"],
+.windows10 input[type="button"],
+.windows10 input[type="file"]::-webkit-file-upload-button,
+.windows10 input[type="file"].button-only::before {
+  min-width: 40px;
+  min-height: 32px;
+  background: #c1c1c1;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: "Segoe UI";
+  padding: 0 11px; }
+
+.windows10 button .icon,
+.windows10 input[type="reset"] .icon,
+.windows10 input[type="button"] .icon {
+  display: inline-block;
+  fill: #000100;
+  color: #000100;
+  width: 20px;
+  height: 20px; }
+
+.windows10 button.primary {
+  background: #0078d7;
+  color: #ffffff; }
+
+.windows10 button:active,
+.windows10 input[type="reset"]:active,
+.windows10 input[type="button"]:active,
+.windows10 input[type="file"]:active::-webkit-file-upload-button,
+.windows10 input[type="file"].button-only:active::before {
+  background: #0063b1;
+  color: #ffffff; }
+
+.windows10 button[disabled],
+.windows10 input[type="reset"][disabled],
+.windows10 input[type="button"][disabled],
+.windows10 input[type="file"][disabled]::-webkit-file-upload-button,
+.windows10 input[type="file"].button-only[disabled]::before {
+  background: #f2f2f2; }
+  .windows10 button[disabled] .icon,
+  .windows10 input[type="reset"][disabled] .icon,
+  .windows10 input[type="button"][disabled] .icon,
+  .windows10 input[type="file"][disabled]::-webkit-file-upload-button .icon,
+  .windows10 input[type="file"].button-only[disabled]::before .icon {
+    color: graytext;
+    fill: graytext; }
 
 .windows10 {
-  /* Buttons */ }
-  .windows10 button,
-  .windows10 input[type="reset"],
-  .windows10 input[type="button"],
-  .windows10 input[type="file"]::-webkit-file-upload-button,
-  .windows10 input[type="file"].button-only::before {
-    min-width: 40px;
-    min-height: 32px;
-    background: #c1c1c1;
-    font-size: 15px;
-    line-height: 20px;
-    font-family: "Segoe UI";
-    padding: 0 11px; }
-  .windows10 button .icon,
-  .windows10 input[type="reset"] .icon,
-  .windows10 input[type="button"] .icon {
-    display: inline-block;
-    fill: #000100;
-    color: #000100;
-    width: 20px;
-    height: 20px; }
-  .windows10 button.primary {
-    background: #0078d7;
-    color: #ffffff; }
-  .windows10 button:active,
-  .windows10 input[type="reset"]:active,
-  .windows10 input[type="button"]:active,
-  .windows10 input[type="file"]:active::-webkit-file-upload-button,
-  .windows10 input[type="file"].button-only:active::before {
-    background: #0063b1;
-    color: #ffffff; }
-  .windows10 button[disabled],
-  .windows10 input[type="reset"][disabled],
-  .windows10 input[type="button"][disabled],
-  .windows10 input[type="file"][disabled]::-webkit-file-upload-button,
-  .windows10 input[type="file"].button-only[disabled]::before {
-    background: #f2f2f2; }
-    .windows10 button[disabled] .icon,
-    .windows10 input[type="reset"][disabled] .icon,
-    .windows10 input[type="button"][disabled] .icon,
-    .windows10 input[type="file"][disabled]::-webkit-file-upload-button .icon,
-    .windows10 input[type="file"].button-only[disabled]::before .icon {
-      color: graytext;
-      fill: graytext; }
-
-.windows10 {
-  /* Inputs */
   /* Checkboxes */
   /* Switch */
   /* Date & Time */
@@ -298,9 +310,8 @@
   padding: 0;
   list-style: none; }
   .windows10 .list li {
-    min-height: 44px;
     background: #ffffff;
-    padding: 17px;
+    padding: 5px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }

@@ -1,8 +1,25 @@
+@import "variables";
+
 .macosx {
+  -webkit-font-smoothing: antialiased;
   font-family: "Helvetica Neue";
-  font-size: 12px;
+  font-size: $font-size;
   background: #ececec;
   padding: 10px;
+
+  h1 {
+    font-size: 46px;
+    line-height: 1.0625;
+    font-weight: 100;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 100;
+    letter-spacing: -0.008em;
+  }
 }
 
 @import "buttons";

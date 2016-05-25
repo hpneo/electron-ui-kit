@@ -1,6 +1,6 @@
-.windows10 {
-  /* Buttons */
+@import "variables";
 
+.windows10 {
   button,
   input[type="reset"],
   input[type="button"],
@@ -9,7 +9,7 @@
     min-width: 40px;
     min-height: 32px;
     background: #c1c1c1;
-    font-size: 15px;
+    font-size: $font-size;
     line-height: 20px;
     font-family: "Segoe UI";
     padding: 0 11px;

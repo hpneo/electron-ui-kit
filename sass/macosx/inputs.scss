@@ -1,8 +1,10 @@
+@import "variables";
+
 .macosx {
   input,
   select {
     font-family: "Helvetica Neue";
-    font-size: 12px;
+    font-size: $font-size;
   }
 
   input[type="datetime"],
@@ -135,7 +137,7 @@
       vertical-align: middle;
       line-height: 1.5;
       font-family: "Helvetica Neue";
-      font-size: 12px;
+      font-size: $font-size;
     }
   }
 
@@ -197,7 +199,7 @@
     &::-webkit-input-placeholder {
       color: #b2b2b2;
       font-family: "helvetica neue";
-      font-size: 12px;
+      font-size: $font-size;
       text-align: center;
       background: url("../images/macosx/icon-search.png") no-repeat left center;
       background-size: contain;
