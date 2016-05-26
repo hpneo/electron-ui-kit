@@ -1,6 +1,8 @@
+@import "variables";
+
 .elementaryos {
-  font-family: "Open Sans";
-  font-size: 12px;
+  font-family: $font-family;
+  font-size: $font-size;
   background: #d5d5d5;
   padding: 12px;
 }

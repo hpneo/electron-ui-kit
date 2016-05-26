@@ -9,10 +9,10 @@
       min-height: 48px;
 
       &:active {
-        background: rgb(218, 218, 218);
+        background: #dadada;
         color: inherit;
       }
-      
+
       &.dropdown-button {
         background-image: url("../images/windows10/select-arrow.png");
         background-repeat: no-repeat;

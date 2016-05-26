@@ -3,7 +3,7 @@
 .macosx {
   input,
   select {
-    font-family: "Helvetica Neue";
+    font-family: $font-family;
     font-size: $font-size;
   }
 
@@ -136,7 +136,7 @@
       -webkit-box-sizing: border-box;
       vertical-align: middle;
       line-height: 1.5;
-      font-family: "Helvetica Neue";
+      font-family: $font-family;
       font-size: $font-size;
     }
   }
@@ -198,7 +198,7 @@
 
     &::-webkit-input-placeholder {
       color: #b2b2b2;
-      font-family: "helvetica neue";
+      font-family: $font-family;
       font-size: $font-size;
       text-align: center;
       background: url("../images/macosx/icon-search.png") no-repeat left center;

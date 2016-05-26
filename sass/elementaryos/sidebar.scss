@@ -1,8 +1,10 @@
+@import "variables";
+
 .elementaryos {
   .sidebar {
     width: 156px;
     background: #dedede;
-    font-size: 12px;
+    font-size: $font-size;
     line-height: 24px;
     padding: 6px 0;
   }

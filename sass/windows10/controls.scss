@@ -25,7 +25,7 @@
       text-overflow: ellipsis;
 
       &.selected {
-        background: rgb(230, 230, 230);
+        background: #e6e6e6;
       }
     }
   }
@@ -39,7 +39,7 @@
       }
 
       th {
-        border: solid 2px rgb(128, 128, 128);
+        border: solid 2px #808080;
         border-top: none;
         font-weight: normal;
         text-align: left;
@@ -66,7 +66,7 @@
         background: #ffffff;
 
         &.selected {
-          background: rgb(230, 230, 230);
+          background: #e6e6e6;
         }
       }
     }

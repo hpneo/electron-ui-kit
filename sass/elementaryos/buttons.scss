@@ -1,3 +1,5 @@
+@import "variables";
+
 .elementaryos {
   button,
   input[type="reset"],
@@ -6,12 +8,12 @@
   input[type="file"]::-webkit-file-upload-button,
   input[type="file"].button-only::before {
     min-height: 25px;
-    font-size: 12px;
+    font-size: $font-size;
     padding: 0 6px;
-    font-family: "Open Sans";
+    font-family: $font-family;
     text-shadow: 0 0.5px rgba(255, 255, 255, 0.4);
 
-    background-color: rgb(245, 245, 245);
+    background-color: #f5f5f5;
     // background-image: linear-gradient(to bottom,
     //                               transparent,
     //                               transparent 50%,
@@ -61,8 +63,8 @@
   input[type="button"][disabled],
   input[type="file"][disabled]::-webkit-file-upload-button,
   input[type="file"].button-only[disabled]::before {
-    color: rgb(156, 156, 156);
-    border: solid 1px rgb(199, 199, 199);
-    background: rgb(245, 245, 245);
+    color: #9c9c9c;
+    border: solid 1px #c7c7c7;
+    background: #f5f5f5;
   }
 }

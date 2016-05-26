@@ -323,7 +323,7 @@
   .windows10 table thead tr {
     height: 35px; }
   .windows10 table thead th {
-    border: solid 2px gray;
+    border: solid 2px #808080;
     border-top: none;
     font-weight: normal;
     text-align: left; }

@@ -1,6 +1,6 @@
 .macosx {
   -webkit-font-smoothing: antialiased;
-  font-family: "Helvetica Neue";
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
   font-size: 13px;
   background: #ececec;
   padding: 10px; }
@@ -28,7 +28,7 @@
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
   font-size: 13px;
   padding: 1px 15px;
-  font-family: "Helvetica Neue"; }
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; }
   .macosx button .icon,
   .macosx input[type="reset"] .icon,
   .macosx input[type="button"] .icon,
@@ -113,7 +113,7 @@
   /* Range */ }
   .macosx input,
   .macosx select {
-    font-family: "Helvetica Neue";
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
     font-size: 13px; }
   .macosx input[type="datetime"],
   .macosx input[type="email"],
@@ -238,7 +238,7 @@
       -webkit-box-sizing: border-box;
       vertical-align: middle;
       line-height: 1.5;
-      font-family: "Helvetica Neue";
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
       font-size: 13px; }
   .macosx input[type=number] {
     position: relative;
@@ -279,7 +279,7 @@
     border-radius: 4px; }
     .macosx input[type="search"]::-webkit-input-placeholder {
       color: #b2b2b2;
-      font-family: "helvetica neue";
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
       font-size: 13px;
       text-align: center;
       background: url("../images/macosx/icon-search.png") no-repeat left center;
@@ -561,7 +561,8 @@
   .macosx .sidebar dt {
     color: #808080;
     padding-left: 9px;
-    font-family: HelveticaNeue-Medium;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300;
     font-size: 10.5px;
     letter-spacing: 0.35px;
     line-height: 16px; }

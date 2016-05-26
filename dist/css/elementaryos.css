@@ -15,7 +15,7 @@
   padding: 0 6px;
   font-family: "Open Sans";
   text-shadow: 0 0.5px rgba(255, 255, 255, 0.4);
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   background-image: linear-gradient(to bottom, #ffffff 10%, #dadada);
   border: 1px solid #a0a0a0;
   border-radius: 3px;
@@ -51,10 +51,9 @@
 .elementaryos input[type="file"].button-only[disabled]::before {
   color: #9c9c9c;
   border: solid 1px #c7c7c7;
-  background: whitesmoke; }
+  background: #f5f5f5; }
 
 .elementaryos {
-  /* Inputs */
   /* Checkboxes */
   /* Switch */
   /* Date & Time */
@@ -132,9 +131,9 @@
     border: 1px solid #b9b9b9;
     border-radius: 2px; }
     .elementaryos input[type="checkbox"]:checked {
-      background: #45A5E9 url("../images/elementaryos/tick.png") no-repeat center center;
+      background: #45a5e9 url("../images/elementaryos/tick.png") no-repeat center center;
       background-size: contain;
-      border-color: #3A8BC5; }
+      border-color: #3a8bc5; }
     .elementaryos input[type="checkbox"][disabled] {
       border-color: #c7c7c7;
       background: #fafafa; }
@@ -146,9 +145,9 @@
     border: 1px solid #b9b9b9;
     border-radius: 23px; }
     .elementaryos input[type="checkbox"].switch.switch:checked {
-      background: url("../images/elementaryos/dot.png") no-repeat right center, url("../images/elementaryos/tick.png") no-repeat 8px center, #45A5E9;
+      background: url("../images/elementaryos/dot.png") no-repeat right center, url("../images/elementaryos/tick.png") no-repeat 8px center, #45a5e9;
       background-size: contain, 11px auto;
-      border-color: #3A8BC5; }
+      border-color: #3a8bc5; }
     .elementaryos input[type="checkbox"].switch.switch[disabled] {
       background: #ffffff url("../images/elementaryos/dot.png") no-repeat left center;
       background-size: contain;
@@ -208,7 +207,7 @@
     min-height: 23px;
     padding: 0 6px;
     text-shadow: 0 1px rgba(255, 255, 255, 0.4);
-    background: whitesmoke;
+    background: #f5f5f5;
     background-image: url("../images/elementaryos/select-arrow.png"), linear-gradient(to bottom, transparent, transparent 50%, rgba(0, 0, 0, 0.104));
     background-repeat: no-repeat;
     background-position: calc(100% - 10px) center, 0 0, 0 0;
@@ -222,7 +221,7 @@
     .elementaryos select[disabled] {
       color: #9c9c9c;
       border: solid 1px #c7c7c7;
-      background: whitesmoke;
+      background: #f5f5f5;
       background-image: url("../images/elementaryos/select-arrow.png");
       background-repeat: no-repeat;
       background-position: calc(100% - 10px) center;
@@ -342,7 +341,7 @@
         border-bottom-right-radius: 3px; }
       .elementaryos .toolbar .segmented-control > button.selected {
         background-color: rgba(0, 0, 0, 0.05);
-        background-image: linear-gradient(to bottom, silver, #d1d1d1);
+        background-image: linear-gradient(to bottom, #c0c0c0, #d1d1d1);
         border-color: #a0a0a0;
         box-shadow: inset 0 0 0 1.5px rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(255, 255, 255, 0.3); }
       .elementaryos .toolbar .segmented-control > button .icon {
