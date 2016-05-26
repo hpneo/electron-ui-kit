@@ -1,13 +1,10 @@
 * {
   -webkit-box-sizing: border-box;
   vertical-align: middle;
+  cursor: default;
 }
 
-h1, h2 {
-  font-weight: lighter;
-}
-
-input, select {
+input, select, textarea {
   outline: none;
 }
 
@@ -29,3 +26,10 @@ input[type="button"],
 input[type="range"] {
   outline: none;
 }
+
+.toolbar > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@import "layouts";

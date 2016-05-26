@@ -1,0 +1,61 @@
+* {
+  -webkit-box-sizing: border-box;
+  vertical-align: middle;
+  cursor: default; }
+
+input, select, textarea {
+  outline: none; }
+
+button,
+input[type="file"]::-webkit-file-upload-button,
+input[type="checkbox"],
+input[type="radio"],
+input[type="reset"],
+input[type="button"],
+input[type="range"] {
+  -webkit-appearance: none;
+  border: none; }
+
+button,
+input[type="file"]::-webkit-file-upload-button,
+input[type="reset"],
+input[type="button"],
+input[type="range"] {
+  outline: none; }
+
+.toolbar > * {
+  display: inline-block;
+  vertical-align: middle; }
+
+.stack-layout, .stack-layout-horizontal, .stack-layout-vertical {
+  display: flex; }
+
+.stack-layout-horizontal {
+  flex-direction: row; }
+  .stack-layout-horizontal > * {
+    flex-grow: 1; }
+
+.stack-layout-vertical {
+  flex-direction: column;
+  align-items: stretch; }
+
+.relative-layout {
+  display: flex;
+  align-items: flex-start; }
+  .relative-layout.center-horizontal {
+    justify-content: center; }
+  .relative-layout.center-vertical {
+    align-items: center; }
+  .relative-layout > .parent-top {
+    align-self: flex-start; }
+  .relative-layout > .parent-bottom {
+    align-self: flex-end; }
+  .relative-layout > .parent-left {
+    margin-right: auto; }
+  .relative-layout > .parent-right {
+    margin-left: auto; }
+
+.absolute-layout {
+  position: relative; }
+  .absolute-layout > * {
+    position: absolute; }

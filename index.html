@@ -5,12 +5,71 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' async rel='stylesheet' type='text/css'>
-  <link href="dist/css/global.css" rel="stylesheet">
+  <link href="dist/css/index.css" rel="stylesheet">
   <link href="dist/css/macosx.css" rel="stylesheet">
   <link href="dist/css/windows10.css" rel="stylesheet">
   <link href="dist/css/elementaryos.css" rel="stylesheet">
+  <style type="text/css">
+    .mock-element {
+      min-width: 48px;
+      min-height: 48px;
+    }
+
+    .mock-element:nth-child(1) {
+      background: #2ecc71;
+    }
+
+    .mock-element:nth-child(2) {
+      background: #3498db;
+    }
+
+    .mock-element:nth-child(3) {
+      background: #9b59b6;
+    }
+
+    .mock-element:nth-child(4) {
+      background: #e67e22;
+    }
+
+    .mock-element:nth-child(5) {
+      background: #e74c3c;
+    }
+
+    .stack-layout-horizontal,
+    .stack-layout-vertical,
+    .relative-layout {
+      padding: 12px;
+    }
+
+    .relative-layout {
+      height: 200px;
+    }
+  </style>
 </head>
 <body>
+  <section>
+    <article id="layouts">
+      <h2>Layouts</h2>
+
+      <div class="stack-layout-horizontal">
+        <div class="mock-element"></div>
+        <div class="mock-element"></div>
+        <div class="mock-element"></div>
+      </div>
+      <div class="stack-layout-vertical">
+        <div class="mock-element"></div>
+        <div class="mock-element"></div>
+        <div class="mock-element"></div>
+      </div>
+      <div class="relative-layout center-horizontal center-vertical">
+        <div class="mock-element parent-left"></div>
+        <div class="mock-element parent-top"></div>
+        <div class="mock-element"></div>
+        <div class="mock-element parent-bottom"></div>
+        <div class="mock-element parent-right"></div>
+      </div>
+    </article>
+  </section>
   <section class="macosx">
     <article id="macosx-buttons">
       <h2>Buttons</h2>

@@ -1,0 +1,55 @@
+.stack-layout {
+  display: flex;
+}
+
+.stack-layout-horizontal {
+  @extend .stack-layout;
+  flex-direction: row;
+
+  > * {
+    flex-grow: 1;
+  }
+}
+
+.stack-layout-vertical {
+  @extend .stack-layout;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.relative-layout {
+  display: flex;
+  align-items: flex-start;
+
+  &.center-horizontal {
+    justify-content: center;
+  }
+
+  &.center-vertical {
+    align-items: center;
+  }
+
+  > .parent-top {
+    align-self: flex-start;
+  }
+
+  > .parent-bottom {
+    align-self: flex-end;
+  }
+
+  > .parent-left {
+    margin-right: auto;
+  }
+
+  > .parent-right {
+    margin-left: auto;
+  }
+}
+
+.absolute-layout {
+  position: relative;
+
+  > * {
+    position: absolute;
+  }
+}
