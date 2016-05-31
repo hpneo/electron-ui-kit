@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "description": "HTML / CSS components with native look for cross-platform Electron apps",
   "scripts": {
-    "build:elementaryos": "./node_modules/.bin/node-sass ./sass/elementaryos/index.scss ./dist/css/elementaryos.css",
-    "build:macosx": "./node_modules/.bin/node-sass ./sass/macosx/index.scss ./dist/css/macosx.css",
-    "build:windows10": "./node_modules/.bin/node-sass ./sass/windows10/index.scss ./dist/css/windows10.css",
-    "build:global": "./node_modules/.bin/node-sass ./sass/index.scss ./dist/css/index.css",
+    "build:elementaryos": "./node_modules/.bin/node-sass --output-style=compressed ./sass/elementaryos/index.scss ./dist/css/elementaryos.css",
+    "build:macosx": "./node_modules/.bin/node-sass --output-style=compressed ./sass/macosx/index.scss ./dist/css/macosx.css",
+    "build:windows10": "./node_modules/.bin/node-sass --output-style=compressed ./sass/windows10/index.scss ./dist/css/windows10.css",
+    "build:global": "./node_modules/.bin/node-sass --output-style=compressed ./sass/index.scss ./dist/css/index.css",
     "build:copyimages": "cp -r ./images ./dist",
     "start": "./node_modules/.bin/parallelshell \"npm run build:global\" \"npm run build:elementaryos\" \"npm run build:macosx\" \"npm run build:windows10\" \"npm run build:copyimages\"",
     "watch": "onchange './sass/**/**' './images/**/**' -- npm run start"

@@ -12,6 +12,19 @@
     }
   }
 
+  .progress-ring {
+    display: inline-block;
+    background: url('../images/windows10/progress-indicator.gif') no-repeat center center;
+    background-size: 100% 100%;
+    width: 32px;
+    height: 32px;
+
+    &.small {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
   .list {
     margin: 0;
     padding: 0;
@@ -30,9 +43,13 @@
     }
   }
 
-  table {
-    border-collapse: collapse;
+  .table-wrapper {
+    .table-body {
+      height: calc(100% - 35px);
+    }
+  }
 
+  table {
     thead {
       tr {
         height: 35px;

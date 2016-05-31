@@ -1,7 +1,37 @@
 * {
   -webkit-box-sizing: border-box;
-  vertical-align: middle;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
   cursor: default;
+}
+
+body {
+  margin: 0;
+
+  &.cursor-progress * {
+    cursor: progress;
+  }
+
+  &.cursor-wait * {
+    cursor: wait;
+  }
+}
+
+.root {
+  margin: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+
+  &.no-scrollable {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  > * {
+    min-width: 100%;
+    min-height: 100%;
+  }
 }
 
 input, select, textarea {
@@ -27,9 +57,62 @@ input[type="range"] {
   outline: none;
 }
 
-.toolbar > * {
-  display: inline-block;
-  vertical-align: middle;
+iframe {
+  border: none;
+}
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+
+  &.table-headerless {
+    thead {
+      tr {
+        height: 0 !important;
+      }
+
+      th {
+        font-size: 0;
+        height: 0;
+        padding: 0;
+        border: none !important;
+      }
+    }
+  }
+}
+
+.block-center {
+  display: block !important;
+  margin: 0 auto;
+}
+
+.toolbar {
+  display: flex;
+
+  > * {
+    display: inline-block;
+    vertical-align: middle;
+    align-self: center;
+
+    &.full {
+      flex: 1;
+    }
+  }
+}
+
+.table-wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  .table-body {
+    overflow: auto;
+    display: block;
+  }
+
+  table {
+    width: 100%;
+  }
 }
 
 @import "layouts";

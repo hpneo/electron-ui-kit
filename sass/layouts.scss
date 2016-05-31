@@ -1,5 +1,13 @@
 .stack-layout {
   display: flex;
+
+  &.center-horizontal {
+    justify-content: center;
+  }
+
+  &.center-vertical {
+    align-items: center;
+  }
 }
 
 .stack-layout-horizontal {
@@ -17,39 +25,14 @@
   align-items: stretch;
 }
 
-.relative-layout {
-  display: flex;
-  align-items: flex-start;
-
-  &.center-horizontal {
-    justify-content: center;
-  }
-
-  &.center-vertical {
-    align-items: center;
-  }
-
-  > .parent-top {
-    align-self: flex-start;
-  }
-
-  > .parent-bottom {
-    align-self: flex-end;
-  }
-
-  > .parent-left {
-    margin-right: auto;
-  }
-
-  > .parent-right {
-    margin-left: auto;
-  }
-}
-
 .absolute-layout {
   position: relative;
 
   > * {
     position: absolute;
   }
+}
+
+.scroll-layout {
+  overflow: auto;
 }
