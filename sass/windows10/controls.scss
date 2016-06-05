@@ -32,7 +32,7 @@
 
     li {
       background: #ffffff;
-      padding: 5px;
+      padding: 10px;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -52,12 +52,12 @@
   table {
     thead {
       tr {
-        height: 35px;
+        height: 48px;
+        line-height: 1;
       }
 
       th {
-        border: solid 2px #808080;
-        border-top: none;
+        border-bottom: solid 2px #808080;
         font-weight: normal;
         text-align: left;
 
@@ -79,8 +79,9 @@
       color: #000000;
 
       tr {
-        height: 35px;
+        height: 48px;
         background: #ffffff;
+        line-height: 1;
 
         &.selected {
           background: #e6e6e6;
@@ -92,7 +93,7 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      padding: 4px;
+      padding: 15px;
     }
   }
 }
